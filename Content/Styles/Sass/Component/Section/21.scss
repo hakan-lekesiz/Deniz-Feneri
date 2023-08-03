@@ -1,0 +1,229 @@
+﻿@import "../../Base/Colour.scss";
+@import "../../Base/Global.scss";
+
+
+ 
+//xs1 and xs2
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    .comp-section-21 {
+
+        > .c-wrapper {
+            padding: 20px 20px 13px 20px;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .c-item-01 {
+                width: 100%;
+                font-size: 16px;
+                line-height: 17px;
+                color: #ffffff;
+                font-weight: 300;
+                margin-bottom: 10px;
+                text-align:center;
+            }
+
+            .c-item-02 {
+                width: 100%;
+                height: 25px;
+                font-size: 15px;
+                line-height: 17px;
+                color: #ffffff;
+                border-radius: 10px;
+                background-color: #f82e46;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .c-item-01-A {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            top: 0px;
+            height: 136px;
+            width: 100%;
+
+            .c-unit-01 {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                z-index: 2;
+                background: linear-gradient(0deg, rgba(12,0,97,1) 0%, rgba(12,0,97,0.8015581232492998) 100%, rgba(255,255,255,0.8211659663865546) 100%);
+            }
+        }
+
+        .c-unit-02 {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            height: 133px;
+        }
+    }
+}
+
+//sm1 and sm2
+@media all and (min-width: #{$mq-sm1 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    .comp-section-21 {
+
+        > .c-wrapper {
+            padding: 20px 90px 0 90px;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .c-item-01 {
+                width: 100%;
+                font-size: 19px;
+                line-height: 21px;
+                color: #ffffff;
+                font-weight: 300;
+                margin-bottom: 12px;
+                text-align: center;
+            }
+
+            .c-item-02 {
+                width: 50%;
+                height: 31px;
+                font-size: 18px;
+                line-height: 20px;
+                color: #ffffff;
+                border-radius: 10px;
+                background-color: #f82e46;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .c-item-01-A {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            top: 0px;
+            height: 147px;
+            width: 100%;
+
+            .c-unit-01 {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                z-index: 2;
+                background: linear-gradient(0deg, rgba(12,0,97,1) 0%, rgba(12,0,97,0.8015581232492998) 100%, rgba(255,255,255,0.8211659663865546) 100%);
+            }
+        }
+
+        .c-unit-02 {
+            margin-top: 20px;
+            width: 100%;
+            object-fit: cover;
+            object-position: 50% 24%;
+            height: 163px;
+        }
+    }
+}
+
+//md+
+@media all and (min-width: #{$mq-md + "px"}) {
+
+    .comp-section-21 {
+
+        > .c-wrapper {
+            height: 279px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0;
+            z-index: 3;
+
+            .c-item-01 {
+                width: 595px;
+                font-size: 20px;
+                line-height: 24px;
+                color: #ffffff;
+                text-align: left;
+                margin-bottom: 20px;
+            }
+
+            .c-item-02 {
+                width: 381px;
+                height: 51px;
+                font-size: 23px;
+                line-height: 32px;
+                color: #ffffff;
+                border-radius: 13px;
+                background-color: #f82e46;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: transform 0.2s;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+            }
+        }
+
+        .c-item-01-A {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            height: 279px;
+            width: 63%;
+
+            .c-unit-01 {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                z-index: 2;
+                background: linear-gradient(0deg, rgba(12,0,97,1) 0%, rgba(12,0,97,0.8015581232492998) 100%, rgba(255,255,255,0.8211659663865546) 100%);
+            }
+        }
+
+        .c-unit-02 {
+            width: 35%;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            height: 279px;
+        }
+    }
+
+}

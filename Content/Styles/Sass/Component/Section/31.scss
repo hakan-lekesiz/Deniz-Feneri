@@ -1,0 +1,147 @@
+﻿@import "../../Base/Colour.scss";
+@import "../../Base/Global.scss";
+
+
+
+//xs1 and xs2
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    .comp-section-31 {
+        margin-top: -60px;
+        z-index: 2;
+
+        > .c-wrapper {
+
+            .c-container-01 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 30px;
+
+                .c-item-01 {
+                    margin-bottom: 18px;
+                    border-radius: 0 40px 40px 40px;
+                    overflow: hidden;
+
+                   
+
+                    .c-item-01-A {
+                        border-radius: 0 40px 40px 40px;
+                        width: 280px;
+                        height: 280px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .c-item-01-B {
+                        width: 246px;
+                        font-size: 19px;
+                        color: #ffffff;
+                        font-weight: bold;
+                        position: absolute;
+                        bottom: 26px;
+                        left: 20px;
+                        z-index: 2;
+                    }
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        z-index: 1;
+                        background-image: url("../../../Content/Visuals/News/degrade.png");
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//sm1 and sm2
+@media all and (min-width: #{$mq-sm1 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    .comp-section-31 {
+        margin-top: 25px;
+
+        > .c-wrapper {
+
+            .c-container-01 {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: -56px;
+                z-index: 2;
+                justify-content: space-around;
+
+                .c-item-01 {
+                    margin-bottom: 16px;
+                    border-radius: 0 50px 50px 50px;
+                    overflow: hidden;
+
+
+
+                    .c-item-01-A {
+                        width: 310px;
+                        height: 310px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .c-item-01-B {
+                        width: 280px;
+                        font-size: 20px;
+                        color: #ffffff;
+                        font-weight: bold;
+                        position: absolute;
+                        bottom: 21px;
+                        left: 22px;
+                        z-index: 2;
+                    }
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        z-index: 1;
+                        background-image: url("../../../Content/Visuals/News/degrade.png");
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//md+
+@media all and (min-width: #{$mq-md + "px"}) {
+    .comp-section-31 {
+        margin-bottom:40px;
+        > .c-wrapper {
+            width: 1130px;
+
+            .c-container-01 {
+                margin-top: 150px;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                .c-item-01 {
+                    margin-bottom: 85px;
+                    overflow: hidden;
+
+                    .c-item-01-A {
+                        width: 768px;
+                        height: 528px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+    }
+}

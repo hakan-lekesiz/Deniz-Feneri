@@ -1,0 +1,1136 @@
+@import "../Base/Global.scss";
+@import "../Base/Colour.scss";
+
+
+#modal-wrapper.type-drw {
+    #modal-header {
+        color: #0E1012;
+    }
+
+    #modal-body {
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+        }
+
+        &::-webkit-scrollbar-thumb {
+            width: 5px;
+            border-radius: 2px;
+            background-color: #F5F7F9;
+        }
+    }
+
+    #modal-footer {
+        border-top: 1px solid #F5F7F9;
+
+        .lnkBtnDrawerPrimary,
+        .lnkBtnDrawerSecondary {
+            border-radius: 4px;
+        }
+
+        .lnkBtnDrawerPrimary {
+            background-color: #002855;
+            color: #fff;
+        }
+
+        .lnkBtnDrawerSecondary {
+            margin-right: 8px;
+            color: #002855;
+        }
+
+        .lnkBtnDrawerTertiary {
+            margin-right: 8px;
+            background-color: #002855;
+            color: #fff;
+            border-radius: 4px;
+        }
+    }
+
+    #modal-close {
+        border-radius: 50%;
+        background-image: svg-background-image('<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M12 1.05L10.95 0L6 4.95L1.05 0L0 1.05L4.95 6L0 10.95L1.05 12L6 7.05L10.95 12L12 10.95L7.05 6L12 1.05Z" fill="#232941"/> </svg> ');
+        background-color: #fff;
+        opacity: 0;
+        @include dynamicTransition(transform 0.25s ease, opacity 0.3s 0.2s);
+
+        &:hover {
+            @include dynamicTransform (scale(1.04));
+        }
+    }
+}
+//
+//
+/* Common XS1 and XS2 */
+//
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    #modal-wrapper.type-drw {
+        #modal-header {
+            height: 76px;
+            padding: 0 70px 0 20px;
+            border-bottom: 1px solid #F5F7F9;
+            line-height: 22px !important;
+
+            h1, h2, h3, h4, h5, h6 {
+                font-weight: 600 !important;
+                font-size: 18px !important;
+                letter-spacing: -0.005em !important;
+            }
+        }
+
+        #modal-body {
+            padding: 0 20px;
+            margin: 20px 0;
+        }
+
+        #modal-footer {
+            height: 100px;
+            padding: 16px 20px 36px 20px;
+            border-top: 1px solid #F5F7F9;
+
+            .lnkBtnDrawerPrimary,
+            .lnkBtnDrawerSecondary,
+            .lnkBtnDrawerTertiary {
+                height: 48px;
+                line-height: 17px;
+                font-weight: 500;
+                font-size: 14px;
+                letter-spacing: -0.01em;
+            }
+
+            .lnkBtnDrawerPrimary {
+                flex: 1;
+            }
+
+            .lnkBtnDrawerSecondary {
+                width: 33%;
+                background-color: #002855;
+            }
+        }
+
+        #modal-close {
+            top: 20px;
+            right: 20px;
+            bottom: auto;
+            left: auto;
+            width: 40px;
+            height: 40px;
+            background-color: #002855;
+        }
+    }
+}
+//
+//
+/* XS1 */
+//
+@media all and (max-width: #{($mq-xs2 - 1) + "px"}) {
+    #modal-wrapper.type-drw {
+    }
+}
+//
+//
+/* XS2 */
+//
+@media all and (min-width: #{$mq-xs2 + "px"}) and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    #modal-wrapper.type-drw {
+    }
+}
+//
+//
+/* Common SM1 and SM2 */
+//
+@media all and (min-width: #{$mq-sm1 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    #modal-wrapper.type-drw {
+        #modal-header {
+            height: 109px;
+            padding: 0 40px;
+            line-height: 29px !important;
+
+            h1, h2, h3, h4, h5, h6 {
+                font-weight: 600 !important;
+                font-size: 24px !important;
+                letter-spacing: -0.005em !important;
+            }
+        }
+
+        #modal-body {
+            padding: 0 30px 0 40px;
+            margin: 0 10px 40px 0;
+        }
+
+        #modal-footer {
+            height: 82px;
+            padding: 0 40px;
+
+            .lnkBtnDrawerPrimary,
+            .lnkBtnDrawerSecondary,
+            .lnkBtnDrawerTertiary {
+                height: 42px;
+                padding: 0 24px;
+                line-height: 16px;
+                font-weight: 500;
+                font-size: 13px;
+                transition: background-color 0.3s;
+            }
+
+            .lnkBtnDrawerPrimary {
+                color: #fff;
+
+                &:hover {
+                    background-color: #002855;
+                }
+            }
+
+            .lnkBtnDrawerSecondary {
+                background-color: #002855;
+
+                &:hover {
+                    background-color: #002855;
+                }
+            }
+        }
+
+        #modal-close {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        &.dir-r2l,
+        &.dir-sm1-r2l,
+        &.dir-sm2-r2l {
+            #modal-close {
+                top: 35px;
+                right: auto;
+                bottom: auto;
+                right: 40px;
+            }
+        }
+
+        &.dir-l2r,
+        &.dir-sm1-l2r,
+        &.dir-sm2-l2r {
+            #modal-close {
+                top: 32px;
+                right: -68px;
+                bottom: auto;
+                left: auto;
+            }
+        }
+    }
+}
+//
+//
+/* SM1 */
+//
+@media all and (min-width: #{$mq-sm1 + "px"}) and (max-width: #{($mq-sm2 - 1) + "px"}) {
+    #modal-wrapper.type-drw {
+    }
+}
+//
+//
+/* SM2 */
+//
+@media all and (min-width: #{$mq-sm2 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    #modal-wrapper.type-drw {
+    }
+}
+
+//
+//
+/* SM2 */
+//
+@media all and (min-width: #{$mq-sm2 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    #modal-wrapper.type-drw {
+    }
+}
+//
+//
+/* Common MD and LG */
+//
+@media all and (min-width: #{$mq-md + "px"}) {
+    #modal-wrapper.type-drw {
+        #modal-header {
+            height: 109px;
+            padding: 0 40px;
+            line-height: 29px;
+
+            h1, h2, h3, h4, h5, h6 {
+                font-weight: 600;
+                font-size: 24px;
+                letter-spacing: -0.005em;
+            }
+        }
+
+        #modal-body {
+            padding: 0 40px 0 40px;
+            margin: 0 0 40px 0;
+        }
+
+        #modal-footer {
+            height: 82px;
+            padding: 0 40px;
+
+            .lnkBtnDrawerPrimary,
+            .lnkBtnDrawerSecondary,
+            .lnkBtnDrawerTertiary {
+                height: 42px;
+                padding: 0 24px;
+                line-height: 16px;
+                font-weight: 500;
+                font-size: 13px;
+                transition: background-color 0.3s;
+            }
+
+            .lnkBtnDrawerPrimary {
+                &:hover {
+                    background-color: #002855;
+                }
+            }
+
+            .lnkBtnDrawerSecondary {
+                background-color: #002855;
+
+                &:hover {
+                    background-color: #002855;
+                }
+            }
+        }
+
+        #modal-close {
+            width: 40px;
+            height: 40px;
+        }
+
+        &.dir-r2l,
+        &.dir-md-r2l,
+        &.dir-lg-r2l {
+            #modal-close {
+                top: 35px;
+                right: auto;
+                bottom: auto;
+                right: 40px;
+            }
+        }
+
+        &.dir-l2r,
+        &.dir-md-l2r,
+        &.dir-lg-l2r {
+            #modal-close {
+                top: 32px;
+                right: -68px;
+                bottom: auto;
+                left: auto;
+            }
+        }
+    }
+}
+//
+//
+/* MD */
+//
+@media all and (min-width: #{$mq-md + "px"}) and (max-width: #{($mq-lg - 1) + "px"}) {
+    #modal-wrapper.type-drw {
+    }
+}
+//
+//
+/* LG */
+//
+@media all and (min-width: #{$mq-lg + "px"}) {
+    #modal-wrapper.type-drw {
+    }
+}
+
+// CONFIGURATIONS:
+//
+// *** NOTE: Duration values have to be identically same as js config values! ***
+//
+// I. Drawer:
+//
+// I.I. General properties:
+$drawer-bg-color: #fff;
+//
+// I.II. Large Drawer:
+//
+// I.II.I. Width values based on media query range:
+$large-drawer-width-xs-1: '100%';
+$large-drawer-width-xs-2: '100%';
+$large-drawer-width-sm-1: 620;
+$large-drawer-width-sm-2: 620;
+$large-drawer-width-md: 800;
+$large-drawer-width-lg: 800;
+//
+// I.II.II. Height values based on media query range:
+$large-drawer-height-xs-1: '50%';
+$large-drawer-height-xs-2: '50%';
+$large-drawer-height-sm-1: 350;
+$large-drawer-height-sm-2: 350;
+$large-drawer-height-md: 450;
+$large-drawer-height-lg: 450;
+//
+// I.II.III. Animation duration:
+$large-drawer-animation-on-duration: 0.75;
+$large-drawer-animation-off-duration: 0.6;
+//
+// I.II.IV. Animation duration:
+$large-drawer-animation-on-ease: 'ease-in-out';
+$large-drawer-animation-off-ease: 'ease-in-out';
+//
+// I.III. Small Drawer:
+//
+// I.III.I. Width values based on media query range:
+$small-drawer-width-xs-1: '100%';
+$small-drawer-width-xs-2: '100%';
+$small-drawer-width-sm-1: 480;
+$small-drawer-width-sm-2: 480;
+$small-drawer-width-md: 480;
+$small-drawer-width-lg: 480;
+//
+// I.III.II. Height values based on media query range:
+$small-drawer-height-xs-1: '35%';
+$small-drawer-height-xs-2: '35%';
+$small-drawer-height-sm-1: 250;
+$small-drawer-height-sm-2: 250;
+$small-drawer-height-md: 375;
+$small-drawer-height-lg: 375;
+//
+// I.III.III. Animation duration:
+$small-drawer-animation-on-duration: 0.65;
+$small-drawer-animation-off-duration: 0.45;
+//
+// I.III.IV. Animation duration:
+$small-drawer-animation-on-ease: 'ease-in-out';
+$small-drawer-animation-off-ease: 'ease-in-out';
+//
+//
+//
+// END of CONFIGURATION
+//
+//
+// MIXINs
+//
+@mixin modalposition($direction) {
+    @if $direction == 't2b' {
+        top: auto;
+        right: 0;
+        bottom: 100%;
+        left: 0;
+    }
+    @else if $direction == 'r2l' {
+        top: 0;
+        right: auto;
+        bottom: 0;
+        left: 100%;
+    }
+    @else if $direction == 'b2t' {
+        top: 100%;
+        right: 0;
+        bottom: auto;
+        left: 0;
+    }
+    @else if $direction == 'l2r' {
+        top: 0;
+        right: 100%;
+        bottom: 0;
+        left: auto;
+    }
+}
+//
+// END of MIXINs
+//
+//
+#modal-wrapper.type-drw {
+    position: fixed;
+    z-index: 1000;
+    visibility: hidden;
+    background-color: $drawer-bg-color;
+
+    &.size-lg {
+        @include dynamicTransition(visibility 0s #{$large-drawer-animation-off-duration}s, transform #{$large-drawer-animation-off-duration}s #{$small-drawer-animation-on-ease} );
+    }
+
+    &.size-sm {
+        @include dynamicTransition(visibility 0s #{$small-drawer-animation-off-duration}s, transform #{$small-drawer-animation-off-duration}s #{$small-drawer-animation-on-ease});
+    }
+
+    &.dir-t2b {
+        @include modalposition('t2b');
+    }
+
+    &.dir-r2l {
+        @include modalposition('r2l');
+    }
+
+    &.dir-b2t {
+        @include modalposition('b2t');
+    }
+
+    &.dir-l2r {
+        @include modalposition('l2r');
+    }
+
+    #modal-content {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    #modal-header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #modal-body {
+        flex: 1;
+        overflow-y: auto;
+    }
+
+    #modal-footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .lnkBtnDrawerPrimary,
+        .lnkBtnDrawerSecondary,
+        .lnkBtnDrawerTertiary {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    #modal-close {
+        position: absolute;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #F5F7F9;
+        opacity: 0;
+        @include dynamicTransition(transform 0.25s ease, opacity 0.3s 0.2s);
+
+        &:hover {
+            @include dynamicTransform (scale(1.04));
+        }
+    }
+
+    &.on {
+        visibility: visible;
+
+        &.size-lg {
+            @include dynamicTransition(visibility 0s 0s, transform #{$large-drawer-animation-on-duration}s #{$small-drawer-animation-on-ease});
+        }
+
+        &.size-sm {
+            @include dynamicTransition(visibility 0s 0s, transform #{$small-drawer-animation-on-duration}s #{$small-drawer-animation-on-ease});
+        }
+
+        &.size-md {
+            @include dynamicTransition(visibility 0s 0s, transform #{$small-drawer-animation-on-duration}s #{$small-drawer-animation-on-ease});
+        }
+
+        &.dir-t2b {
+            @include dynamicTransform (translateY(100%));
+        }
+
+        &.dir-r2l {
+            @include dynamicTransform (translateX(-100%));
+        }
+
+        &.dir-b2t {
+            @include dynamicTransform (translateY(-100%));
+        }
+
+        &.dir-l2r {
+            @include dynamicTransform (translateX(100%));
+        }
+
+        #modal-close {
+            opacity: 1;
+            @include dynamicTransition(transform 0.25s ease, opacity 0.3s 0s);
+        }
+    }
+}
+//
+//
+/* Common XS1 and XS2 */
+//
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    #modal-wrapper.type-drw {
+    }
+}
+//
+//
+/* XS1 */
+//
+@media all and (max-width: #{($mq-xs2 - 1) + "px"}) {
+    #modal-wrapper.type-drw {
+        &.dir-r2l,
+        &.dir-l2r {
+            &.size-lg {
+                width: #{$large-drawer-width-xs-1};
+                height: auto;
+            }
+
+            &.size-sm {
+                width: #{$small-drawer-width-xs-1};
+                height: auto;
+            }
+        }
+
+        &.dir-t2b,
+        &.dir-b2t {
+            &.size-lg {
+                width: auto;
+                height: #{$large-drawer-height-xs-1};
+            }
+
+            &.size-sm {
+                width: auto;
+                height: #{$small-drawer-height-xs-1};
+            }
+        }
+
+        &.dir-xs1-r2l,
+        &.dir-xs1-l2r {
+            &.size-lg {
+                width: #{$large-drawer-width-xs-1};
+                height: auto;
+            }
+
+            &.size-sm {
+                width: #{$small-drawer-width-xs-1};
+                height: auto;
+            }
+        }
+
+        &.dir-xs1-t2b,
+        &.dir-xs1-b2t {
+            &.size-lg {
+                width: auto;
+                height: #{$large-drawer-height-xs-1};
+            }
+
+            &.size-sm {
+                width: auto;
+                height: #{$small-drawer-height-xs-1};
+            }
+        }
+
+        &.dir-xs1-t2b {
+            @include modalposition('t2b');
+        }
+
+        &.dir-xs1-r2l {
+            @include modalposition('r2l');
+        }
+
+        &.dir-xs1-b2t {
+            @include modalposition('b2t');
+        }
+
+        &.dir-xs1-l2r {
+            @include modalposition('l2r');
+        }
+
+        &.on {
+            &.dir-xs1-t2b {
+                @include dynamicTransform (translateY(100%));
+            }
+
+            &.dir-xs1-r2l {
+                @include dynamicTransform (translateX(-100%));
+            }
+
+            &.dir-xs1-b2t {
+                @include dynamicTransform (translateY(-100%));
+            }
+
+            &.dir-xs1-l2r {
+                @include dynamicTransform (translateX(100%));
+            }
+        }
+    }
+}
+//
+//
+/* XS2 */
+//
+@media all and (min-width: #{$mq-xs2 + "px"}) and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    #modal-wrapper.type-drw {
+        &.dir-r2l,
+        &.dir-l2r {
+            &.size-lg {
+                width: #{$large-drawer-width-xs-2};
+                height: auto;
+            }
+
+            &.size-sm {
+                width: #{$small-drawer-width-xs-2};
+                height: auto;
+            }
+        }
+
+        &.dir-t2b,
+        &.dir-b2t {
+            &.size-lg {
+                width: auto;
+                height: #{$large-drawer-height-xs-2};
+            }
+
+            &.size-sm {
+                width: auto;
+                height: #{$small-drawer-height-xs-2};
+            }
+        }
+
+        &.dir-xs2-r2l,
+        &.dir-xs2-l2r {
+            &.size-lg {
+                width: #{$large-drawer-width-xs-2};
+                height: auto;
+            }
+
+            &.size-sm {
+                width: #{$small-drawer-width-xs-2};
+                height: auto;
+            }
+        }
+
+        &.dir-xs2-t2b,
+        &.dir-xs2-b2t {
+            &.size-lg {
+                width: auto;
+                height: #{$large-drawer-height-xs-2};
+            }
+
+            &.size-sm {
+                width: auto;
+                height: #{$small-drawer-height-xs-2};
+            }
+        }
+
+        &.dir-xs2-t2b {
+            @include modalposition('t2b');
+        }
+
+        &.dir-xs2-r2l {
+            @include modalposition('r2l');
+        }
+
+        &.dir-xs2-b2t {
+            @include modalposition('b2t');
+        }
+
+        &.dir-xs2-l2r {
+            @include modalposition('l2r');
+        }
+
+        &.on {
+            &.dir-xs2-t2b {
+                @include dynamicTransform (translateY(100%));
+            }
+
+            &.dir-xs2-r2l {
+                @include dynamicTransform (translateX(-100%));
+            }
+
+            &.dir-xs2-b2t {
+                @include dynamicTransform (translateY(-100%));
+            }
+
+            &.dir-xs2-l2r {
+                @include dynamicTransform (translateX(100%));
+            }
+        }
+    }
+}
+//
+//
+/* Common SM1 and SM2 */
+//
+@media all and (min-width: #{$mq-sm1 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    #modal-wrapper.type-drw {
+    }
+}
+//
+//
+/* SM1 */
+//
+@media all and (min-width: #{$mq-sm1 + "px"}) and (max-width: #{($mq-sm2 - 1) + "px"}) {
+    #modal-wrapper.type-drw {
+        &.dir-r2l,
+        &.dir-l2r {
+            &.size-lg {
+                width: #{$large-drawer-width-sm-1}px;
+                height: auto;
+            }
+
+            &.size-sm {
+                width: #{$small-drawer-width-sm-1}px;
+                height: auto;
+            }
+        }
+
+        &.dir-t2b,
+        &.dir-b2t {
+            &.size-lg {
+                width: auto;
+                height: #{$large-drawer-height-sm-1}px;
+            }
+
+            &.size-sm {
+                width: auto;
+                height: #{$small-drawer-height-sm-1}px;
+            }
+        }
+
+        &.dir-sm1-r2l,
+        &.dir-sm1-l2r {
+            &.size-lg {
+                width: #{$large-drawer-width-sm-1}px;
+                height: auto;
+            }
+
+            &.size-sm {
+                width: #{$small-drawer-width-sm-1}px;
+                height: auto;
+            }
+        }
+
+        &.dir-sm1-t2b,
+        &.dir-sm1-b2t {
+            &.size-lg {
+                width: auto;
+                height: #{$large-drawer-height-sm-1}px;
+            }
+
+            &.size-sm {
+                width: auto;
+                height: #{$small-drawer-height-sm-1}px;
+            }
+        }
+
+        &.dir-sm1-t2b {
+            @include modalposition('t2b');
+        }
+
+        &.dir-sm1-r2l {
+            @include modalposition('r2l');
+        }
+
+        &.dir-sm1-b2t {
+            @include modalposition('b2t');
+        }
+
+        &.dir-sm1-l2r {
+            @include modalposition('l2r');
+        }
+
+        &.on {
+            &.dir-sm1-t2b {
+                @include dynamicTransform (translateY(100%));
+            }
+
+            &.dir-sm1-r2l {
+                @include dynamicTransform (translateX(-100%));
+            }
+
+            &.dir-sm1-b2t {
+                @include dynamicTransform (translateY(-100%));
+            }
+
+            &.dir-sm1-l2r {
+                @include dynamicTransform (translateX(100%));
+            }
+        }
+    }
+}
+//
+//
+/* SM2 */
+//
+@media all and (min-width: #{$mq-sm2 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    #modal-wrapper.type-drw {
+        &.dir-r2l,
+        &.dir-l2r {
+            &.size-lg {
+                width: #{$large-drawer-width-sm-2}px;
+                height: auto;
+            }
+
+            &.size-sm {
+                width: #{$small-drawer-width-sm-2}px;
+                height: auto;
+            }
+        }
+
+        &.dir-t2b,
+        &.dir-b2t {
+            &.size-lg {
+                width: auto;
+                height: #{$large-drawer-height-sm-2}px;
+            }
+
+            &.size-sm {
+                width: auto;
+                height: #{$small-drawer-height-sm-2}px
+            }
+        }
+
+        &.dir-sm2-r2l,
+        &.dir-sm2-l2r {
+            &.size-lg {
+                width: #{$large-drawer-width-sm-2}px;
+                height: auto;
+            }
+
+            &.size-sm {
+                width: #{$small-drawer-width-sm-2}px;
+                height: auto;
+            }
+        }
+
+        &.dir-sm2-t2b,
+        &.dir-sm2-b2t {
+            &.size-lg {
+                width: auto;
+                height: #{$large-drawer-height-sm-2}px;
+            }
+
+            &.size-sm {
+                width: auto;
+                height: #{$small-drawer-height-sm-2}px
+            }
+        }
+
+        &.dir-sm2-t2b {
+            @include modalposition('t2b');
+        }
+
+        &.dir-sm2-r2l {
+            @include modalposition('r2l');
+        }
+
+        &.dir-sm2-b2t {
+            @include modalposition('b2t');
+        }
+
+        &.dir-sm2-l2r {
+            @include modalposition('l2r');
+        }
+
+        &.on {
+            &.dir-sm2-t2b {
+                @include dynamicTransform (translateY(100%));
+            }
+
+            &.dir-sm2-r2l {
+                @include dynamicTransform (translateX(-100%));
+            }
+
+            &.dir-sm2-b2t {
+                @include dynamicTransform (translateY(-100%));
+            }
+
+            &.dir-sm2-l2r {
+                @include dynamicTransform (translateX(100%));
+            }
+        }
+    }
+}
+//
+//
+/* Common MD and LG */
+//
+@media all and (min-width: #{$mq-md + "px"}) {
+    #modal-wrapper.type-drw {
+    }
+}
+//
+//
+/* MD */
+//
+@media all and (min-width: #{$mq-md + "px"}) and (max-width: #{($mq-lg - 1) + "px"}) {
+    #modal-wrapper.type-drw {
+        &.dir-r2l,
+        &.dir-l2r {
+            &.size-lg {
+                width: #{$large-drawer-width-md}px;
+                height: auto;
+            }
+
+            &.size-sm {
+                width: #{$small-drawer-width-md}px;
+                height: auto;
+            }
+        }
+
+        &.dir-t2b,
+        &.dir-b2t {
+            &.size-lg {
+                width: auto;
+                height: #{$large-drawer-height-md}px;
+            }
+
+            &.size-sm {
+                width: auto;
+                height: #{$small-drawer-height-md}px;
+            }
+        }
+
+        &.dir-md-r2l,
+        &.dir-md-l2r {
+            &.size-lg {
+                width: #{$large-drawer-width-md}px;
+                height: auto;
+            }
+
+            &.size-sm {
+                width: #{$small-drawer-width-md}px;
+                height: auto;
+            }
+        }
+
+        &.dir-md-t2b,
+        &.dir-md-b2t {
+            &.size-lg {
+                width: auto;
+                height: #{$large-drawer-height-md}px;
+            }
+
+            &.size-sm {
+                width: auto;
+                height: #{$small-drawer-height-md}px;
+            }
+        }
+
+        &.dir-md-t2b {
+            @include modalposition('t2b');
+        }
+
+        &.dir-md-r2l {
+            @include modalposition('r2l');
+        }
+
+        &.dir-md-b2t {
+            @include modalposition('b2t');
+        }
+
+        &.dir-md-l2r {
+            @include modalposition('l2r');
+        }
+
+        &.on {
+            &.dir-md-t2b {
+                @include dynamicTransform (translateY(100%));
+            }
+
+            &.dir-md-r2l {
+                @include dynamicTransform (translateX(-100%));
+            }
+
+            &.dir-md-b2t {
+                @include dynamicTransform (translateY(-100%));
+            }
+
+            &.dir-md-l2r {
+                @include dynamicTransform (translateX(100%));
+            }
+        }
+    }
+}
+//
+//
+/* LG */
+//
+@media all and (min-width: #{$mq-lg + "px"}) {
+    #modal-wrapper.type-drw {
+        &.dir-r2l,
+        &.dir-l2r {
+            &.size-lg {
+                width: #{$large-drawer-width-lg}px;
+                height: auto;
+            }
+
+            &.size-sm {
+                width: #{$small-drawer-width-lg}px;
+                height: auto;
+            }
+        }
+
+        &.dir-t2b,
+        &.dir-b2t {
+            &.size-lg {
+                width: auto;
+                height: #{$large-drawer-height-lg}px;
+            }
+
+            &.size-sm {
+                width: auto;
+                height: #{$small-drawer-height-lg}px;
+            }
+        }
+
+        &.dir-lg-r2l,
+        &.dir-lg-l2r {
+            &.size-lg {
+                width: #{$large-drawer-width-lg}px;
+                height: auto;
+            }
+
+            &.size-sm {
+                width: #{$small-drawer-width-lg}px;
+                height: auto;
+            }
+        }
+
+        &.dir-lg-t2b,
+        &.dir-lg-b2t {
+            &.size-lg {
+                width: auto;
+                height: #{$large-drawer-height-lg}px;
+            }
+
+            &.size-sm {
+                width: auto;
+                height: #{$small-drawer-height-lg}px;
+            }
+        }
+
+        &.dir-lg-t2b {
+            @include modalposition('t2b');
+        }
+
+        &.dir-lg-r2l {
+            @include modalposition('r2l');
+        }
+
+        &.dir-lg-b2t {
+            @include modalposition('b2t');
+        }
+
+        &.dir-lg-l2r {
+            @include modalposition('l2r');
+        }
+
+        &.on {
+            &.dir-lg-t2b {
+                @include dynamicTransform (translateY(100%));
+            }
+
+            &.dir-lg-r2l {
+                @include dynamicTransform (translateX(-100%));
+            }
+
+            &.dir-lg-b2t {
+                @include dynamicTransform (translateY(-100%));
+            }
+
+            &.dir-lg-l2r {
+                @include dynamicTransform (translateX(100%));
+            }
+        }
+    }
+}

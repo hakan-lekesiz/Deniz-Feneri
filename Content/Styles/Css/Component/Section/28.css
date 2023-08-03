@@ -1,0 +1,38 @@
+@media all and (max-width: 767px) {
+  .comp-section-28 {
+    z-index: 2;
+  }
+  .comp-section-28 > .c-wrapper .c-item-03 .c-item-03-A {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1299px) {
+  .comp-section-28 {
+    z-index: 2;
+  }
+  .comp-section-28 > .c-wrapper .c-item-03 .c-item-03-A {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+@media all and (min-width: 1300px) {
+  .comp-section-28 {
+    z-index: 2;
+    margin-bottom: 90px;
+  }
+  .comp-section-28 > .c-wrapper .c-item-03 .c-item-03-A {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+/*# sourceMappingURL=28.css.map */

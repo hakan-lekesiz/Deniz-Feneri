@@ -1,0 +1,169 @@
+@media all and (max-width: 767px) {
+  .comp-section-15 {
+    width: 100%;
+  }
+  .comp-section-15 .owl-carousel .owl-nav {
+    display: none !important;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: calc(50% - 50px);
+    padding: 0 110px;
+  }
+  .comp-section-15 .owl-carousel .owl-nav .owl-prev {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #FFF;
+  }
+  .comp-section-15 .owl-carousel .owl-nav .owl-next {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #FFF;
+  }
+  .comp-section-15 .owl-carousel .owl-dots {
+    position: absolute;
+    left: calc(50% - 100px);
+    bottom: 37px;
+  }
+  .comp-section-15 .owl-carousel .owl-dots .owl-dot > span {
+    width: 30px;
+    height: 8px;
+    background: transparent;
+    border: 1px solid gray;
+  }
+  .comp-section-15 .owl-carousel .owl-dots .owl-dot.active > span {
+    width: 55px;
+    background: #FFF;
+  }
+  .comp-section-15 .slide-item {
+    width: 100%;
+    height: 430px;
+  }
+  .comp-section-15 .slide-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1299px) {
+  .comp-section-15 {
+    width: 100%;
+  }
+  .comp-section-15 .owl-carousel .owl-nav {
+    display: none !important;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: calc(50% - 50px);
+    padding: 0 110px;
+  }
+  .comp-section-15 .owl-carousel .owl-nav .owl-prev {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #FFF;
+  }
+  .comp-section-15 .owl-carousel .owl-nav .owl-next {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #FFF;
+  }
+  .comp-section-15 .owl-carousel .owl-dots {
+    position: absolute;
+    left: calc(50% - 100px);
+    bottom: 24px;
+  }
+  .comp-section-15 .owl-carousel .owl-dots .owl-dot > span {
+    width: 30px;
+    height: 8px;
+    background: transparent;
+    border: 1px solid gray;
+  }
+  .comp-section-15 .owl-carousel .owl-dots .owl-dot.active > span {
+    width: 55px;
+    background: #FFF;
+  }
+  .comp-section-15 .slide-item {
+    width: 100%;
+    height: 430px;
+  }
+  .comp-section-15 .slide-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media all and (min-width: 1300px) {
+  .comp-section-15 {
+    width: 100%;
+  }
+  .comp-section-15 .owl-carousel .owl-nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: calc(50% - 50px);
+    padding: 0 110px;
+  }
+  .comp-section-15 .owl-carousel .owl-nav .owl-prev {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #FFF;
+  }
+  .comp-section-15 .owl-carousel .owl-nav .owl-next {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #FFF;
+  }
+  .comp-section-15 .owl-carousel .owl-dots {
+    position: absolute;
+    left: calc(50% - 100px);
+    bottom: 50px;
+  }
+  .comp-section-15 .owl-carousel .owl-dots .owl-dot > span {
+    width: 30px;
+    height: 8px;
+    background: transparent;
+    border: 1px solid gray;
+  }
+  .comp-section-15 .owl-carousel .owl-dots .owl-dot.active > span {
+    width: 55px;
+    background: #FFF;
+  }
+  .comp-section-15 .slide-item {
+    width: 100%;
+    height: 560px;
+  }
+  .comp-section-15 .slide-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*# sourceMappingURL=15.css.map */

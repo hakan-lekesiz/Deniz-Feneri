@@ -1,0 +1,104 @@
+.f-dropmenu-sender {
+  z-index: 120;
+}
+
+.f-dropmenu {
+  position: absolute;
+  z-index: 110;
+}
+.f-dropmenu.f-dropmenu-fade {
+  opacity: 0;
+  visibility: hidden;
+  -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+  -o-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+  -webkit-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+  transition: opacity 0.2s 0s, visibility 0s 0.2s;
+}
+.f-dropmenu.f-dropmenu-fade.on {
+  opacity: 1;
+  visibility: visible;
+  -moz-transition: opacity 0.2s 0s, visibility 0s 0s;
+  -o-transition: opacity 0.2s 0s, visibility 0s 0s;
+  -webkit-transition: opacity 0.2s 0s, visibility 0s 0s;
+  transition: opacity 0.2s 0s, visibility 0s 0s;
+}
+
+.f-dropmenu-overlay {
+  background-color: rgba(76, 255, 0, 0.5) !important;
+}
+
+.section-image {
+  opacity: 0;
+  visibility: hidden;
+  -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+  -o-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+  -webkit-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+  transition: opacity 0.2s 0s, visibility 0s 0.2s;
+}
+.section-image.on {
+  opacity: 1;
+  visibility: visible;
+  -moz-transition: opacity 0.2s 0s, visibility 0s 0s;
+  -o-transition: opacity 0.2s 0s, visibility 0s 0s;
+  -webkit-transition: opacity 0.2s 0s, visibility 0s 0s;
+  transition: opacity 0.2s 0s, visibility 0s 0s;
+}
+
+.mt-px {
+  margin-top: 8px !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.whatsapp {
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  user-select: none;
+  line-height: 1;
+  overflow: hidden;
+  min-width: 40px;
+  max-width: 350px;
+  bottom: 20px;
+  border-radius: 15px 0 0 15px;
+  right: 0;
+  background: #0dc152;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.whatsapp .icon {
+  position: relative;
+  z-index: 2;
+  height: 43px;
+  padding: 10px 12px;
+  border-radius: 0 15px 0 0;
+  background: rgba(0, 0, 0, 0.05);
+  transition: background-color 0.5s ease;
+}
+
+@media all and (max-width: 767px) {
+  .pt-xs1-0 {
+    padding-top: 0 !important;
+  }
+}
+/* XS1 sss*/
+/* XS2 */
+/* Common SM1 and SM2 */
+@media all and (min-width: 768px) and (max-width: 1299px) {
+  .mt-sm1-70 {
+    margin-top: 70px !important;
+  }
+}
+/* SM1 */
+/* SM2 */
+/* Common MD and LG */
+/* MD */
+/* LG */
+
+/*# sourceMappingURL=UxHelper.css.map */

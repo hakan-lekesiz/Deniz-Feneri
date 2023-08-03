@@ -1,0 +1,376 @@
+@media all and (max-width: 767px) {
+  .comp-section-10 {
+    margin-top: -60px;
+    z-index: 2;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .c-item-01 {
+    margin-bottom: 18px;
+    border-radius: 0 40px 40px 40px;
+    overflow: hidden;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .c-item-01:nth-last-child(-n+3) {
+    display: none;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .c-item-01 .c-item-01-A {
+    border-radius: 0 40px 40px 40px;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .c-item-01 .c-item-01-B {
+    width: 246px;
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    bottom: 26px;
+    left: 20px;
+    z-index: 2;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .c-item-01:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url("../../../Content/Visuals/News/degrade.png");
+    background-size: cover;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 0 40px 40px 40px;
+    margin-bottom: 18px;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .slide-item {
+    display: flex;
+    height: 280px;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .slide-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .slide-item h4 {
+    position: absolute;
+    width: calc(100% - 32px);
+    left: 16px;
+    bottom: 48px;
+    text-align: center;
+    z-index: 3;
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: 700;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .slide-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background-image: url("../../../Content/Visuals/News/degrade.png");
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: -160px;
+    left: 12px;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: -160px;
+    right: 12px;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 8px;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-dots .owl-dot button {
+    background: transparent;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.25s;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-dots .owl-dot:hover button, .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-dots .owl-dot.active button {
+    background-color: #00a0fc;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-dots .owl-dot:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1299px) {
+  .comp-section-10 > .c-wrapper .c-container-01 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -56px;
+    z-index: 2;
+    justify-content: space-around;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .c-item-01 {
+    margin-bottom: 16px;
+    border-radius: 0 50px 50px 50px;
+    overflow: hidden;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .c-item-01:nth-last-child(-n+3) {
+    display: none;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .c-item-01 .c-item-01-A {
+    width: 310px;
+    height: 310px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .c-item-01 .c-item-01-B {
+    width: 280px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    bottom: 21px;
+    left: 22px;
+    z-index: 2;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .c-item-01:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url("../../../Content/Visuals/News/degrade.png");
+    background-size: cover;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container {
+    width: 662px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 0 50px 50px 50px;
+    margin-bottom: 16px;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .slide-item {
+    display: flex;
+    height: 350px;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .slide-item img {
+    width: 662px;
+    height: 350px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .slide-item h4 {
+    position: absolute;
+    width: 386px;
+    left: 79px;
+    bottom: 59px;
+    z-index: 3;
+    font-size: 31px;
+    color: #ffffff;
+    font-weight: 700;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .slide-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background-image: url("../../../Content/Visuals/News/degrade.png");
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: -194px;
+    left: 24px;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: -194px;
+    right: 24px;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-dots {
+    display: flex;
+    position: absolute;
+    left: 79px;
+    bottom: 14px;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-dots .owl-dot button {
+    background: transparent;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-dots .owl-dot:hover button, .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-dots .owl-dot.active button {
+    background-color: #00a0fc;
+  }
+}
+@media all and (min-width: 1300px) {
+  .comp-section-10 > .c-wrapper {
+    width: 1130px;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -56px;
+    z-index: 2;
+    justify-content: space-between;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .c-item-01 {
+    margin-bottom: 37px;
+    overflow: hidden;
+    border-radius: 0 50px 50px 50px;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .c-item-01 .c-item-01-A {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .c-item-01 .c-item-01-B {
+    width: 310px;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    z-index: 2;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .c-item-01:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url("../../../Content/Visuals/News/degrade.png");
+    background-size: cover;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container {
+    width: 740px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 0 50px 50px 50px;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .slide-item {
+    display: flex;
+    height: 350px;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .slide-item img {
+    width: 740px;
+    height: 350px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .slide-item h4 {
+    position: absolute;
+    width: 386px;
+    left: 79px;
+    bottom: 59px;
+    z-index: 3;
+    font-size: 31px;
+    color: #ffffff;
+    font-weight: 700;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .slide-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background-image: url("../../../Content/Visuals/News/degrade.png");
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: -194px;
+    left: 24px;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: -194px;
+    right: 24px;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-dots {
+    display: flex;
+    position: absolute;
+    left: 79px;
+    bottom: 14px;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-dots .owl-dot button {
+    background: transparent;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+  }
+  .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-dots .owl-dot:hover button, .comp-section-10 > .c-wrapper .c-container-01 .slider-container .owl-carousel .owl-dots .owl-dot.active button {
+    background-color: #00a0fc;
+  }
+}
+
+/*# sourceMappingURL=10.css.map */

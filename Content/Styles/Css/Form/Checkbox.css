@@ -1,0 +1,93 @@
+.chk-A {
+  display: flex;
+}
+.chk-A > label {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+}
+.chk-A > label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+}
+.chk-A [type=checkbox]:checked ~ label::before,
+.chk-A [type=radio]:checked ~ label::before {
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.chk-A:hover > label::before {
+  border: 1px solid #687F9B;
+  background-color: #E5E8ED;
+}
+.chk-A [type=checkbox]:disabled ~ label::before,
+.chk-A [type=radio]:disabled ~ label::before {
+  border: none;
+  background-color: #F9F9FB;
+}
+.chk-A [type=checkbox].parenterror ~ label::before,
+.chk-A [type=radio].parenterror ~ label::before {
+  border: 1px solid #AB2521;
+  background-color: #fff;
+}
+.chk-A > label {
+  min-width: 24px;
+  min-height: 24px;
+  padding: 0 0 0 40px;
+}
+.chk-A > label::before {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #687F9B;
+  border-radius: 4px;
+  transition: background-color 0.2s, border 0.2s;
+}
+.chk-A [type=checkbox]:checked ~ label::before,
+.chk-A [type=radio]:checked ~ label::before {
+  border: 1px solid #687F9B !important;
+  background-size: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Crect%20x%3D%220.5%22%20y%3D%220.5%22%20width%3D%2223%22%20height%3D%2223%22%20rx%3D%223.5%22%20fill%3D%22%23E5E8ED%22%2F%3E%20%3Cpath%20d%3D%22M10.5702%2015.5L7%2011.9593L8.13602%2010.8326L10.5702%2013.2467L15.8611%208L17%209.12242L10.5702%2015.5Z%22%20fill%3D%22%230A2240%22%2F%3E%20%3Crect%20x%3D%220.5%22%20y%3D%220.5%22%20width%3D%2223%22%20height%3D%2223%22%20rx%3D%223.5%22%20stroke%3D%22%23687F9B%22%2F%3E%20%3C%2Fsvg%3E%20");
+  background-color: #E5E8ED;
+}
+.chk-A > label {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #0A2240;
+}
+.chk-A.parenterror > label.error {
+  display: none !important;
+}
+
+@media all and (max-width: 1680px) {
+  .chk-A > label {
+    min-width: 20px;
+    min-height: 20px;
+    padding: 0 0 0 32px;
+  }
+  .chk-A > label::before {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #687F9B;
+    border-radius: 4px;
+    transition: background-color 0.2s, border 0.2s;
+  }
+  .chk-A [type=checkbox]:checked ~ label::before,
+.chk-A [type=radio]:checked ~ label::before {
+    border: 1px solid #687F9B !important;
+    background-size: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Crect%20x%3D%220.5%22%20y%3D%220.5%22%20width%3D%2219%22%20height%3D%2219%22%20rx%3D%223.5%22%20fill%3D%22%23E5E8ED%22%2F%3E%20%3Cpath%20d%3D%22M8.92762%2012.625L6.25%209.96944L7.10202%209.12445L8.92762%2010.935L12.8958%207L13.75%207.84181L8.92762%2012.625Z%22%20fill%3D%22%230A2240%22%2F%3E%20%3Crect%20x%3D%220.5%22%20y%3D%220.5%22%20width%3D%2219%22%20height%3D%2219%22%20rx%3D%223.5%22%20stroke%3D%22%23687F9B%22%2F%3E%20%3C%2Fsvg%3E%20");
+    background-color: #E5E8ED;
+  }
+  .chk-A > label {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+/*# sourceMappingURL=Checkbox.css.map */

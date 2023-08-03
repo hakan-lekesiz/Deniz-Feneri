@@ -1,0 +1,125 @@
+@media all and (max-width: 767px) {
+  .comp-section-11 {
+    padding: 12px 0 80px 0;
+  }
+  .comp-section-11 > .c-wrapper {
+    border-radius: 0 45px 45px 45px;
+    overflow: hidden;
+    width: 280px;
+  }
+  .comp-section-11 > .c-wrapper:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(0deg, #0c0061 0%, rgba(12, 0, 97, 0.8) 50%, rgba(255, 255, 255, 0.8) 100%);
+    z-index: 1;
+  }
+  .comp-section-11 > .c-wrapper .c-item-01 {
+    display: block;
+  }
+  .comp-section-11 > .c-wrapper .c-item-01 .c-item-01-A {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: auto;
+  }
+  .comp-section-11 > .c-wrapper .c-item-01 .c-item-01-B {
+    text-align: center;
+    width: 170px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #FFFFFF;
+    position: absolute;
+    left: 55px;
+    bottom: 24px;
+    z-index: 2;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1299px) {
+  .comp-section-11 {
+    padding: 12px 0 80px 0;
+  }
+  .comp-section-11 > .c-wrapper {
+    border-radius: 0 45px 45px 45px;
+    overflow: hidden;
+    width: 658px;
+  }
+  .comp-section-11 > .c-wrapper:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(0deg, #0c0061 0%, rgba(12, 0, 97, 0.8) 50%, rgba(255, 255, 255, 0.8) 100%);
+    z-index: 1;
+  }
+  .comp-section-11 > .c-wrapper .c-item-01 {
+    display: block;
+  }
+  .comp-section-11 > .c-wrapper .c-item-01 .c-item-01-A {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: auto;
+  }
+  .comp-section-11 > .c-wrapper .c-item-01 .c-item-01-B {
+    text-align: center;
+    width: 170px;
+    font-size: 23px;
+    font-weight: bold;
+    color: #FFFFFF;
+    position: absolute;
+    left: 244px;
+    bottom: 24px;
+    z-index: 2;
+  }
+}
+@media all and (min-width: 1300px) {
+  .comp-section-11 {
+    padding-top: 12px;
+    margin-bottom: 120px;
+  }
+  .comp-section-11 > .c-wrapper {
+    border-radius: 0 45px 45px 45px;
+    overflow: hidden;
+    width: 1130px;
+  }
+  .comp-section-11 > .c-wrapper:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, #0c0061 0%, rgba(12, 0, 97, 0.8) 50%, rgba(255, 255, 255, 0.8) 100%);
+    z-index: 1;
+  }
+  .comp-section-11 > .c-wrapper .c-item-01 {
+    display: flex;
+  }
+  .comp-section-11 > .c-wrapper .c-item-01 .c-item-01-A {
+    width: 60%;
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: auto;
+  }
+  .comp-section-11 > .c-wrapper .c-item-01 .c-item-01-B {
+    width: 170px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFFFFF;
+    position: absolute;
+    left: 75px;
+    top: 70px;
+    z-index: 2;
+  }
+}
+
+/*# sourceMappingURL=11.css.map */

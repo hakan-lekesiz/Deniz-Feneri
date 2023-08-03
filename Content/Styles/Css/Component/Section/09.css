@@ -1,0 +1,175 @@
+@media all and (max-width: 767px) {
+  .comp-section-09 {
+    padding: 60px 0 30px 0;
+  }
+  .comp-section-09 > .c-wrapper .c-item-01 {
+    font-size: 24px;
+    color: #051168;
+    font-weight: 700;
+    width: auto;
+    margin-bottom: 60px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-02 {
+    font-size: 19px;
+    color: #6a6a6a;
+    margin-bottom: 42px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-03 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 0 60px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-03 > img {
+    width: 90px;
+    height: 90px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-03 > img:not(:last-child):after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 50px;
+    background-color: #e0dfdf;
+  }
+  .comp-section-09 > .c-wrapper .c-item-04 {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #051168;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-05 {
+    font-size: 19px;
+    color: #6a6a6a;
+    font-weight: 700;
+    margin-bottom: 35px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-06 {
+    margin-bottom: 70px;
+    padding-right: 10px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-06 > li {
+    font-size: 18px;
+    color: #6a6a6a;
+    margin-bottom: 3px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1299px) {
+  .comp-section-09 {
+    padding: 60px 0 30px 0;
+  }
+  .comp-section-09 > .c-wrapper .c-item-01 {
+    font-size: 29px;
+    line-height: 40px;
+    color: #051168;
+    font-weight: 700;
+    width: auto;
+    margin-bottom: 60px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-02 {
+    font-size: 23px;
+    color: #6a6a6a;
+    margin-bottom: 42px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-03 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 17px 0 60px 0;
+  }
+  .comp-section-09 > .c-wrapper .c-item-03 > img {
+    width: 120px;
+    height: 120px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-03 > img:not(:last-child):after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 50px;
+    background-color: #e0dfdf;
+  }
+  .comp-section-09 > .c-wrapper .c-item-04 {
+    margin-right: 10px;
+    font-size: 29px;
+    line-height: 39px;
+    color: #051168;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-05 {
+    font-size: 23px;
+    color: #6a6a6a;
+    font-weight: 700;
+    margin-bottom: 35px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-06 {
+    margin-bottom: 70px;
+    padding-right: 10px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-06 > li {
+    font-size: 21px;
+    color: #6a6a6a;
+  }
+}
+@media all and (min-width: 1300px) {
+  .comp-section-09 {
+    padding: 100px 0 80px 0;
+  }
+  .comp-section-09 > .c-wrapper {
+    width: 1100px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-01 {
+    font-size: 33px;
+    line-height: 35px;
+    color: #051168;
+    font-weight: 700;
+    width: auto;
+    margin: 0 142px 40px 0;
+  }
+  .comp-section-09 > .c-wrapper .c-item-02 {
+    font-size: 22px;
+    color: #6a6a6a;
+  }
+  .comp-section-09 > .c-wrapper .c-item-02:not(:last-child) {
+    margin-bottom: 85px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-03 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 0 75px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-03 > img:not(:last-child) {
+    margin-right: 60px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-04 {
+    font-size: 37px;
+    line-height: 39px;
+    color: #051168;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-05 {
+    font-size: 22px;
+    color: #6a6a6a;
+    font-weight: 700;
+    margin-bottom: 35px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-06 {
+    margin-bottom: 85px;
+  }
+  .comp-section-09 > .c-wrapper .c-item-06 > li {
+    font-size: 16px;
+    color: #6a6a6a;
+  }
+}
+
+/*# sourceMappingURL=09.css.map */

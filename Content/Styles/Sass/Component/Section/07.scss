@@ -1,0 +1,126 @@
+﻿@import "../../Base/Colour.scss";
+@import "../../Base/Global.scss";
+
+.comp-section-07 {
+
+    > .c-wrapper {
+    }
+}
+
+//xs1 and xs2
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    .comp-section-07 {
+        padding: 0 0 60px 0;
+
+        > .c-wrapper {
+
+
+            .c-item-01 {
+
+                .c-item-01-A {
+                    font-size: 24px;
+                    color: #051168;
+                    font-weight: 700;
+                    margin-bottom: 32px;
+                }
+
+                .c-item-01-B {
+                    font-size: 19px;
+                    color: #6a6a6a;
+                }
+            }
+
+            .c-item-02 {
+                margin-top: 70px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                > a {
+                    &:not(:last-child) {
+                    }
+                }
+            }
+        }
+    }
+}
+
+//sm1 and sm2
+@media all and (min-width: #{$mq-sm1 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    .comp-section-07 {
+        padding: 0 0 60px 0;
+
+        > .c-wrapper {
+
+
+            .c-item-01 {
+
+                .c-item-01-A {
+                    font-size: 29px;
+                    color: #051168;
+                    font-weight: 700;
+                    margin-bottom: 32px;
+                }
+
+                .c-item-01-B {
+                    font-size: 23px;
+                    color: #6a6a6a;
+                }
+            }
+
+            .c-item-02 {
+                margin-top: 70px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                > a {
+                    &:not(:last-child) {
+                    }
+                }
+            }
+        }
+    }
+}
+
+//md+
+@media all and (min-width: #{$mq-md + "px"}) {
+    .comp-section-07 {
+        padding: 80px 0 30px 0;
+
+        > .c-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1100px;
+
+            .c-item-01 {
+                width: 600px;
+
+                .c-item-01-A {
+                    font-size: 22px;
+                    color: #051168;
+                    font-weight: 700;
+                    margin-bottom: 27px;
+                }
+
+                .c-item-01-B {
+                    font-size: 22px;
+                    color: #6a6a6a;
+                }
+            }
+
+            .c-item-02 {
+                display: flex;
+                align-items: center;
+                padding-right: 15px;
+
+                > a {
+                    &:not(:last-child) {
+                        margin-right: 57px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,199 @@
+@media all and (max-width: 767px) {
+  .comp-section-36 {
+    width: 100%;
+    height: auto;
+    padding: 24px 0 12px 0;
+    display: flex;
+    align-items: center;
+  }
+  .comp-section-36 .background-img-01 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .comp-section-36 .c-wrapper {
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .comp-section-36 .c-wrapper > .c-item-01 {
+    font-size: 23px;
+    line-height: 27px;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 13px;
+    height: 44px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #051168;
+    z-index: 1;
+    margin-bottom: 28px;
+  }
+  .comp-section-36 .c-wrapper > .c-item-01 .arrow {
+    position: absolute;
+    left: calc(50% - 14.5px);
+    bottom: -14px;
+  }
+  .comp-section-36 .c-wrapper > .c-item-02 {
+    display: flex;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 12px;
+  }
+  .comp-section-36 .c-wrapper > .c-item-02 > .c-item-02-A {
+    border-radius: 6px;
+    background-color: #f82e46;
+    width: 100%;
+    height: 100%;
+    padding: 0 12px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    background-image: url(../../../Content/Visuals/_arrow2.png);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: 14px;
+    font-size: 23px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1299px) {
+  .comp-section-36 {
+    width: 100%;
+    height: auto;
+    padding: 24px 0 12px 0;
+    display: flex;
+    align-items: center;
+  }
+  .comp-section-36 .background-img-01 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .comp-section-36 .c-wrapper {
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .comp-section-36 .c-wrapper > .c-item-01 {
+    font-size: 23px;
+    line-height: 27px;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 13px;
+    height: 44px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #051168;
+    z-index: 1;
+    margin-bottom: 28px;
+  }
+  .comp-section-36 .c-wrapper > .c-item-01 .arrow {
+    position: absolute;
+    left: calc(50% - 14.5px);
+    bottom: -14px;
+  }
+  .comp-section-36 .c-wrapper > .c-item-02 {
+    display: flex;
+    width: 48%;
+    height: 48px;
+    margin-bottom: 12px;
+  }
+  .comp-section-36 .c-wrapper > .c-item-02 > .c-item-02-A {
+    border-radius: 6px;
+    background-color: #f82e46;
+    width: 100%;
+    height: 100%;
+    padding: 0 12px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    background-image: url(../../../Content/Visuals/_arrow2.png);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: 14px;
+    font-size: 23px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+@media all and (min-width: 1300px) {
+  .comp-section-36 {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+  }
+  .comp-section-36 .background-img-01 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .comp-section-36 .c-wrapper {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 56px;
+  }
+  .comp-section-36 .c-wrapper > .c-item-01 {
+    font-size: 27px;
+    line-height: 32px;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 13px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #051168;
+    z-index: 1;
+  }
+  .comp-section-36 .c-wrapper > .c-item-01 .arrow {
+    position: absolute;
+    left: calc(50% - 14.5px);
+    bottom: -14px;
+  }
+  .comp-section-36 .c-wrapper > .c-item-02 {
+    display: flex;
+    width: 359px;
+    height: 48px;
+  }
+  .comp-section-36 .c-wrapper > .c-item-02 > .c-item-02-A {
+    border-radius: 6px;
+    background-color: #f82e46;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px 0 15px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    background-image: url(../../../Content/Visuals/_arrow2.png);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: 14px;
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+
+/*# sourceMappingURL=36.css.map */

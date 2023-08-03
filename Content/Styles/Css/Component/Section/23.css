@@ -1,0 +1,176 @@
+@media all and (max-width: 767px) {
+  .comp-section-23 {
+    margin-bottom: 21px;
+  }
+  .comp-section-23 > .c-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .comp-section-23 > .c-wrapper .c-item-01 {
+    font-size: 31px;
+    color: #00a0fc;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .comp-section-23 > .c-wrapper .c-item-02 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .comp-section-23 > .c-wrapper .c-item-02 .c-unit {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 19px;
+  }
+  .comp-section-23 > .c-wrapper .c-item-02 .c-unit:nth-child(2n+1):after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 16px;
+    width: 1px;
+    height: 130px;
+    background-color: #e4e4e4;
+  }
+  .comp-section-23 > .c-wrapper .c-item-02 .c-unit .c-unit-01 {
+    width: 68px;
+    height: 73px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .comp-section-23 > .c-wrapper .c-item-02 .c-unit .c-unit-02 {
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 36px;
+    color: #051168;
+    font-weight: 700;
+  }
+  .comp-section-23 > .c-wrapper .c-item-02 .c-unit .c-unit-03 {
+    font-size: 10px;
+    line-height: 19px;
+    color: #051168;
+    text-align: center;
+    font-weight: 400;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1299px) {
+  .comp-section-23 {
+    margin-bottom: 21px;
+  }
+  .comp-section-23 > .c-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .comp-section-23 > .c-wrapper .c-item-01 {
+    font-size: 37px;
+    color: #00a0fc;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .comp-section-23 > .c-wrapper .c-item-02 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 40px;
+  }
+  .comp-section-23 > .c-wrapper .c-item-02 .c-unit {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .comp-section-23 > .c-wrapper .c-item-02 .c-unit:nth-child(2n+1):after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 16px;
+    width: 1px;
+    height: 130px;
+    background-color: #e4e4e4;
+  }
+  .comp-section-23 > .c-wrapper .c-item-02 .c-unit .c-unit-01 {
+    width: 76px;
+    height: 84px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .comp-section-23 > .c-wrapper .c-item-02 .c-unit .c-unit-02 {
+    font-size: 28px;
+    letter-spacing: -1px;
+    line-height: 39px;
+    color: #051168;
+    font-weight: 700;
+  }
+  .comp-section-23 > .c-wrapper .c-item-02 .c-unit .c-unit-03 {
+    font-size: 12px;
+    line-height: 20px;
+    color: #051168;
+    text-align: center;
+    font-weight: 400;
+  }
+}
+@media all and (min-width: 1300px) {
+  .comp-section-23 {
+    margin-bottom: 90px;
+  }
+  .comp-section-23 > .c-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .comp-section-23 > .c-wrapper .c-item-01 {
+    font-size: 52px;
+    color: #00a0fc;
+    font-weight: 500;
+    margin-bottom: 65px;
+  }
+  .comp-section-23 > .c-wrapper .c-item-02 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 70px;
+  }
+  .comp-section-23 > .c-wrapper .c-item-02 .c-unit {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .comp-section-23 > .c-wrapper .c-item-02 .c-unit:not(:last-child):after {
+    content: "";
+    position: absolute;
+    right: -68px;
+    top: 30px;
+    width: 1px;
+    height: 250px;
+    background-color: #e4e4e4;
+  }
+  .comp-section-23 > .c-wrapper .c-item-02 .c-unit .c-unit-01 {
+    width: 131px;
+    height: 142px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .comp-section-23 > .c-wrapper .c-item-02 .c-unit .c-unit-02 {
+    font-size: 47px;
+    letter-spacing: -2px;
+    line-height: 70px;
+    color: #051168;
+    font-weight: 700;
+  }
+  .comp-section-23 > .c-wrapper .c-item-02 .c-unit .c-unit-03 {
+    font-size: 20px;
+    line-height: 32px;
+    color: #051168;
+    text-align: center;
+    font-weight: 400;
+  }
+}
+
+/*# sourceMappingURL=23.css.map */

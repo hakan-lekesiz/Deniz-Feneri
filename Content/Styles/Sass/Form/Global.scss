@@ -1,0 +1,172 @@
+//
+// Checkbox mixins
+//
+@mixin chk-default($displayvalue: '') {
+    > label {
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+
+        @if not ($displayvalue == '') {
+            display: #{$displayvalue};
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            background-color: #fff;
+        }
+    }
+
+    [type=checkbox]:checked ~ label::before,
+    [type=radio]:checked ~ label::before {
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+@mixin chk-label-before($width, $height, $border, $radius, $padding) {
+    > label {
+        min-width: $width;
+        min-height: $height;
+        padding: $padding;
+
+        &::before {
+            width: $width;
+            height: $height;
+            border: #{$border};
+            border-radius: $radius;
+            transition: background-color 0.2s, border 0.2s;
+        }
+    }
+}
+
+@mixin chk-checked-label-before($border, $bg-size, $bg-img, $bg-color: '') {
+    [type=checkbox]:checked ~ label::before,
+    [type=radio]:checked ~ label::before {
+        border: $border !important;
+        background-size: $bg-size;
+        background-image: svg-background-image($bg-img);
+
+        @if not ($bg-color == '') {
+            background-color: $bg-color;
+        }
+    }
+}
+
+@mixin chk-hover-label-before($border, $bg-size: '', $bg-img: '', $bg-color: '', $color: '') {
+    &:hover {
+        & > label {
+            @if not ($color == '') {
+                color: $color;
+            }
+
+            &::before {
+                @if not ($border == '') {
+                    border: #{$border};
+                }
+
+                @if not ($bg-size == '') {
+                    background-size: $bg-size;
+                }
+
+                @if not ($bg-img == '') {
+                    background-image: $bg-img;
+                }
+
+                @if not ($bg-color == '') {
+                    background-color: $bg-color;
+                }
+            }
+        }
+    }
+}
+
+@mixin chk-focus-label-before($border, $bg-size: '', $bg-img: '', $bg-color: '', $color: '') {
+    [type=checkbox]:focus ~ label,
+    [type=radio]:focus ~ label {
+        @if not ($color == '') {
+            color: $color;
+        }
+
+        &::before {
+            @if not ($border == '') {
+                border: #{$border};
+            }
+
+            @if not ($bg-size == '') {
+                background-size: $bg-size;
+            }
+
+            @if not ($bg-img == '') {
+                background-image: $bg-img;
+            }
+
+            @if not ($bg-color == '') {
+                background-color: $bg-color;
+            }
+        }
+    }
+}
+
+@mixin chk-disabled-label-before($border, $bg-size: '', $bg-img: '', $bg-color: '', $color: '') {
+    [type=checkbox]:disabled ~ label,
+    [type=radio]:disabled ~ label {
+        @if not ($color == '') {
+            color: $color;
+        }
+
+        &::before {
+            @if not ($border == '') {
+                border: #{$border};
+            }
+
+            @if not ($bg-size == '') {
+                background-size: $bg-size;
+            }
+
+            @if not ($bg-img == '') {
+                background-image: $bg-img;
+            }
+
+            @if not ($bg-color == '') {
+                background-color: $bg-color;
+            }
+        }
+    }
+}
+
+@mixin chk-error-label-before($border, $bg-size: '', $bg-img: '', $bg-color: '', $color: '') {
+    [type=checkbox].parenterror,
+    [type=radio].parenterror {
+        & ~ label {
+            @if not ($color == '') {
+                color: $color;
+            }
+
+            &::before {
+                @if not ($border == '') {
+                    border: #{$border};
+                }
+
+                @if not ($bg-size == '') {
+                    background-size: $bg-size;
+                }
+
+                @if not ($bg-img == '') {
+                    background-image: $bg-img;
+                }
+
+                @if not ($bg-color == '') {
+                    background-color: $bg-color;
+                }
+            }
+        }
+    }
+}
+//
+// End: Checkbox mixins
+//

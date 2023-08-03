@@ -1,0 +1,10 @@
+@import "../Base/Colour.scss";
+@import "../Base/Global.scss";
+
+.listerror{
+    border-color:$color-systemred-900 !important;
+
+    label.error{
+        display:none !important;
+    }
+}

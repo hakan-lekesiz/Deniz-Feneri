@@ -1,0 +1,779 @@
+﻿
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Deniz Feneri</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Deniz Feneri">
+
+    <link href="Content/Visuals/Logos/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/Plugins/OwlCarousel/owl.carousel.min.css" rel="stylesheet" />
+    <link href="Content/Plugins/select2-4.1.0-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link href="Content/Plugins/OwlCarousel/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="Content/Styles/Css/Base.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <div id="page-wrapper">
+        <div id="content-wrapper">
+
+            <header class="comp-header-02">
+                <div class="c-wrapper">
+
+                    <a id="back-button" href="javascript:void(0);">
+                        Geri Dön
+                    </a>
+                    <a id="site-logo" href="index.html">
+                        <img src="Content/Visuals/Logos/Logo3.png" class="logotype-positive" />
+                    </a>
+
+                    <a id="login-button" data-modal="loginModal" href="javascript:void(0);"
+                       onclick='Feux.Modal.Actions.show({
+                                ev: event,
+                                sender: this,
+                                type: "mdl",
+                                size: "sm",
+                                dir: ["fade", "loginModal"],
+                                esc: false,
+                                overlay: true
+                         });'>
+                        Giriş Yap
+                    </a>
+
+                </div>
+            </header>
+
+            <main class="pt-0">
+                <section class="comp-section-03" id="tabber-header">
+                    <img src="Content/Visuals/dashed-line.png" alt="Alternate Text" class="background-image" />
+                    <div class="c-wrapper">
+                        <div class="c-item" data-tab-header-container="true">
+                            <a href="#tabber-header" class="c-item-01 active" data-tab-no="1" onclick="Feux.Checkout.Tabber.changeTab(this);">
+                                <div class="c-item-01-A">
+                                    <img src="Content/Visuals/bagis-ozeti.png" alt="Alternate Text" class="ligth" />
+                                    <img src="Content/Visuals/bagis-ozeti-dark.png" alt="Alternate Text" class="dark" />
+                                </div>
+                                <div class="c-item-01-B">
+                                    1. Bağış Özeti
+                                </div>
+                            </a>
+                            <a href="#tabber-header" class="c-item-01" data-tab-no="2" onclick="Feux.Checkout.Tabber.changeTab(this);">
+                                <div class="c-item-01-A">
+                                    <img src="Content/Visuals/odeme-bilgiler-light.png" alt="Alternate Text" class="ligth" />
+                                    <img src="Content/Visuals/odeme-bilgiler.png" alt="Alternate Text" class="dark" />
+                                </div>
+                                <div class="c-item-01-B">
+                                    2. Ödeme Bilgileri
+                                </div>
+                            </a>
+                            <a href="#tabber-header" class="c-item-01" data-tab-no="3" onclick="Feux.Checkout.Tabber.changeTab(this);">
+                                <div class="c-item-01-A">
+                                    <img src="Content/Visuals/tamamlandi.png" alt="Alternate Text" class="ligth" />
+                                    <img src="Content/Visuals/tamamlandi-dark.png" alt="Alternate Text" class="dark" />
+                                </div>
+                                <div class="c-item-01-B">
+                                    3. Bağış Tamamlandı
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="comp-section-04">
+                    <img src="Content/Visuals/dashed-line2.png" alt="Alternate Text" class="background-image" />
+                    <div class="c-wrapper" data-tab-content-container="true">
+                        <div class="tab active" id="tab-01" data-tab-no="1">
+
+
+                            <div class="c-container-02">
+                                <h3 class="c-container-01">
+                                    <strong>Bağış</strong> Özeti
+                                </h3>
+                                <div class="c-item-01" data-cart-line="1">
+                                    <div class="c-unit-01">
+                                        <img src="Content/Visuals/kumbara.png" alt="Alternate Text" class="c-unit-01-A" />
+                                        <h6 class="c-unit-01-B">
+                                            Genel Bağış
+                                        </h6>
+                                        <div class="c-unit-02">
+                                            <a class="other on" href="javascript:void(0);" onclick="Feux.Checkout.toggleSender(this)">Başkası Adına</a>
+                                            <a class="myself" href="javascript:void(0);" onclick="Feux.Checkout.toggleSender(this)">Kendi Adına</a>
+                                        </div>
+                                        <div class="c-unit-03">
+                                            <a href="javascript:void(0);">-</a>
+                                            <span>
+                                                120<span class="ff-default">₺</span>
+                                            </span>
+                                            <a href="javascript:void(0);">+</a>
+                                            <a href="javascript:void(0);">
+                                                <img src="Content/Visuals/trash.png" alt="Alternate Text" class="c-unit-01-A" />
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <form class="c-unit-04">
+                                        <div class="c-unit-04-A">
+                                            <label class="c-unit-04-A-01">
+                                                <img src="Content/Visuals/acik-mavi-user.png" alt="Alternate Text">
+                                            </label>
+                                            <input id="full-name" placeholder="Ad-Soyad" type="text" name="name" autocomplete="new-password" class="tb-01" data-rule-required="true" onkeyup="this.setAttribute('value', this.value);">
+                                        </div>
+
+
+
+                                        <div class="c-unit-04-C">
+                                            <label class="c-unit-04-C-01">
+                                                <img src="Content/Visuals/phone-call-beyaz.png" alt="Alternate Text">
+                                            </label>
+                                            <input id="MobileNumber" placeholder="Telefon" type="text" name="MobileNumber" data-maskformat="phone" data-rule-required="true" data-rule-minlength="15" autocomplete="new-password" class="tb-01" onkeyup="this.setAttribute('value', this.value);">
+                                        </div>
+
+
+                                    </form>
+                                </div>
+                                <div class="c-item-01" data-cart-line="2">
+                                    <div class="c-unit-01">
+                                        <img src="Content/Visuals/kumbara.png" alt="Alternate Text" class="c-unit-01-A" />
+                                        <h6 class="c-unit-01-B">
+                                            Genel Bağış
+                                        </h6>
+                                        <div class="c-unit-02">
+                                            <a class="other" href="javascript:void(0)" onclick="Feux.Checkout.toggleSender(this)">Başkası Adına</a>
+                                            <a class="myself on" href="javascript:void(0)" onclick="Feux.Checkout.toggleSender(this)">Kendi Adına</a>
+                                        </div>
+                                        <div class="c-unit-03">
+                                            <a href="javascript:void(0);">-</a>
+                                            <span>
+                                                120<span class="ff-default">₺</span>
+                                            </span>
+                                            <a href="javascript:void(0);">+</a>
+                                            <a href="javascript:void(0);">
+                                                <img src="Content/Visuals/trash.png" alt="Alternate Text" class="c-unit-01-A" />
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <form class="c-unit-04" style="display:none;">
+                                        <div class="c-unit-04-A">
+                                            <label class="c-unit-04-A-01">
+                                                <img src="Content/Visuals/acik-mavi-user.png" alt="Alternate Text">
+                                            </label>
+                                            <input id="full-name" placeholder="Ad-Soyad" type="text" name="name" autocomplete="new-password" class="tb-01" data-rule-required="true" onkeyup="this.setAttribute('value', this.value);">
+                                        </div>
+
+
+
+                                        <div class="c-unit-04-C">
+                                            <label class="c-unit-04-C-01">
+                                                <img src="Content/Visuals/phone-call-beyaz.png" alt="Alternate Text">
+                                            </label>
+                                            <input id="MobileNumber" placeholder="Telefon" type="text" name="MobileNumber" data-maskformat="phone" data-rule-required="true" data-rule-minlength="15" autocomplete="new-password" class="tb-01" onkeyup="this.setAttribute('value', this.value);">
+                                        </div>
+
+
+
+                                    </form>
+                                </div>
+
+                            </div>
+                            <div class="c-container-03">
+                                <a class="c-item-01">
+                                    <span class="c-unit-01">TOPLAM BAĞIŞ  </span>
+                                    <span class="c-unit-02">120.00<span class="ff-default">₺</span></span>
+                                </a>
+                                <a class="c-item-02" href="#tabber-header" data-tab-no="2" onclick="Feux.Checkout.Tabber.changeTab(this);">
+                                    <span class="c-unit-01">DEVAM ET </span>
+                                    <img class="c-unit-02" src="Content/Visuals/arrow-right.png" alt="Alternate Text">
+                                </a>
+                                <a class="c-item-03" href="javascript:void(0);">
+                                    <img class="c-unit-01" src="Content/Visuals/arrow-left.png" alt="Alternate Text">
+                                    <span class="c-unit-02">Bağış Sepetine Dön</span>
+                                </a>
+                            </div>
+
+
+                        </div>
+                        <div class="tab" id="tab-02" data-tab-no="2">
+                            <div class="c-container-01">
+                                <div class="c-container-01-A">
+
+                                    <div class="c-item-01">
+                                        <h4 class="c-item-01-A">
+                                            <strong>Bağışçı</strong> Bilgileri
+                                        </h4>
+                                        <h4 class="c-item-01-B">
+                                            KENDİ BİLGİLERİNİZİ GİRİNİZ!
+                                        </h4>
+                                    </div>
+                                    <form class="c-item-02">
+                                        <div class="c-item-02-A">
+                                            <label class="c-item-02-A-01">
+                                                Adınız Soyadınız
+                                            </label>
+                                            <input id="payment-full-name" placeholder="Bir İsim ve Soyisim Giriniz" type="text" name="payment-full-name" autocomplete="new-password" class="tb-01" data-rule-required="true" onkeyup="this.setAttribute('value', this.value);">
+                                        </div>
+
+                                        <div class="c-item-02-B">
+                                            <label class="c-item-02-A-01">
+                                                Cep Telefon Numaranız
+                                            </label>
+
+                                            <select class="c-item-02-A-02">
+                                                <option value="value">+90</option>
+                                                <option value="value">+91</option>
+                                            </select>
+
+                                            <input id="payment-phone" placeholder="Cep Telefonu Numarası" type="text" name="payment-phone" data-maskformat="phone" data-rule-required="true" data-rule-minlength="15" autocomplete="new-password" class="tb-01 c-item-02-A-03" onkeyup="this.setAttribute('value', this.value);">
+                                        </div>
+
+                                        <div class="c-item-02-C">
+                                            <label class="c-item-02-C-01">
+                                                T.C. Kimlik No
+                                            </label>
+                                            <input id="tckn" placeholder="Kimlik No" type="text" name="tckn" data-maskformat="tckn" autocomplete="new-password" class="tb-01" data-rule-citizenid="true" data-rule-required="true" onkeyup="this.setAttribute('value', this.value);">
+                                        </div>
+
+                                        <div class="c-item-02-D">
+                                            <label class="c-item-02-D-01">
+                                                E-Mail
+                                            </label>
+                                            <input id="email" placeholder="E-Mail Giriniz" type="text" name="email" autocomplete="new-password" class="tb-01" data-rule-email="true" data-rule-required="true" onkeyup="this.setAttribute('value', this.value);">
+                                        </div>
+
+                                        <div class="c-item-02-E">
+                                            <label class="c-item-02-E-01">
+                                                Yaşadığınız Yer
+                                            </label>
+
+                                            <select class="c-item-02-E-02">
+                                                <option value="">Ülke</option>
+                                                <option value="value">Türkiye</option>
+                                                <option value="value">Almanya</option>
+                                                <option value="value">İtalya</option>
+                                            </select>
+                                            <select class="c-item-02-E-02">
+                                                <option value="">İl</option>
+                                                <option value="value">İstanbul</option>
+                                            </select>
+                                            <select class="c-item-02-E-02">
+                                                <option value="">İlçe</option>
+                                                <option value="value">Kartal</option>
+                                            </select>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="c-container-01-B">
+
+                                    <h4 class="c-item-01">
+                                        <strong>Ödeme</strong> Bilgileri
+                                    </h4>
+                                    <form class="c-item-03 val-A" id="payment-form">
+
+
+                                        <div class="c-item-03-A">
+                                            <label>
+                                                Kart Numarası
+                                            </label>
+                                            <input placeholder="Kart üzerindeki numarayı giriniz" id="ccNumber" name="ccNumber" type="text"
+                                                   onkeyup="Feux.Checkout.creditCardNumberChange(this)"
+                                                   data-rule-required="true" data-rule-minlength="19" data-maskformat="0000 0000 0000 0000" autocomplete="off" class="tb-01">
+
+                                        </div>
+
+                                        <div class="c-item-03-B">
+                                            <div class="c-unit-01">
+                                                <h3 class="c-item-03-B-01"> Son Kullanma Tarihi</h3>
+                                                <select class="c-item-03-B-03" id="cc-month" onchange="Feux.Checkout.ccInfoChange()">
+                                                    <option value="">AY</option>
+                                                    <option value="01">01</option>
+                                                    <option value="02">02</option>
+                                                    <option value="03">03</option>
+                                                    <option value="04">04</option>
+                                                    <option value="05">05</option>
+                                                    <option value="06">06</option>
+                                                    <option value="07">07</option>
+                                                    <option value="08">08</option>
+                                                    <option value="09">09</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                                <select class="c-item-03-B-03" id="cc-year" onchange="Feux.Checkout.ccInfoChange()">
+                                                    <option value="">YIL</option>
+                                                    <option value="22">2022</option>
+                                                    <option value="23">2023</option>
+                                                    <option value="24">2024</option>
+                                                    <option value="25">2025</option>
+                                                    <option value="26">2026</option>
+                                                </select>
+                                            </div>
+                                            <div class="c-unit-02">
+                                                <h3>CVC</h3>
+                                                <input onkeyup="Feux.Checkout.ccInfoChange()"
+                                                       onfocus="Feux.Checkout.ccvFocus()"
+                                                       onfocusout="Feux.Checkout.ccvFocusout()"
+                                                       id="ccCode" name="ccCode" type="text" data-rule-required="true" data-rule-minlength="3" data-maskformat="000" autocomplete="off" class="tb-01" />
+                                                <span class="f-tooltip-A" data-tooltip-text="Kartınızın arka yüzünde bulunan 3 basamaklı Kart Doğrulama Kodu'dur.">
+
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="credit-card-box">
+                                            <div class="flip">
+                                                <div class="front">
+                                                    <img src="Content/Visuals/onn.png" alt="Alternate Text" class="on" />
+
+                                                    <div class="icons" id="f-creditCartIcon">
+                                                        <img src="Content/Visuals/Logos/logo_mastercard.svg" alt="Alternate Text" class="master" />
+                                                        <img src="Content/Visuals/Logos/logo_visa.svg" alt="Alternate Text" class="visa" />
+                                                        <img src="Content/Visuals/Logos/logo_troy.svg" alt="Alternate Text" class="troy" />
+                                                    </div>
+                                                    <!--<div id="cc-name-container">
+                                                        <div id="cc-title">
+                                                            AD SOYAD
+                                                        </div>
+                                                        <div id="ccOwner-target" data-default-value="AD SOYAD">
+                                                            AD SOYAD
+                                                        </div>
+                                                    </div>-->
+                                                    <div id="cc-date-container">
+                                                        <div id="cc-date">
+                                                            SKT
+                                                        </div>
+                                                        <div>
+                                                            <span id="cc-month-target" data-default-value="MM">
+                                                                MM
+                                                            </span>
+                                                            /
+                                                            <span id="cc-year-target" data-default-value="YY">
+                                                                YY
+                                                            </span>
+                                                        </div>
+
+                                                    </div>
+                                                    <div id="ccNumber-target">
+
+                                                    </div>
+                                                </div>
+                                                <div class="back">
+                                                    <img src="Content/Visuals/arkaa.png" alt="Alternate Text" class="arka" />
+
+                                                    <div id="ccCode-target" data-default-value="CVC">
+                                                        CVC
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </form>
+
+                                </div>
+
+                            </div>
+
+                            <div class="c-container-03">
+                                <div class="c-item-01">
+                                    <h4 class="c-item-01-A">
+                                        <strong>Bağış</strong> Özeti
+                                    </h4>
+                                    <div class="c-item-01-B">
+                                        <div class="c-unit-01">
+                                            Genel Bağış
+                                        </div>
+                                        <div class="c-unit-02">
+                                            120<span class="ff-default">₺</span>
+                                        </div>
+                                    </div>
+                                    <div class="c-item-01-BB">
+                                        <div class="c-item-01-B-01">
+
+                                            <input onchange="Feux.Checkout.Bagis(this);" id="bagis" type="checkbox" name="name" style="cursor:pointer;" />
+
+                                            <label for="bagis" style="cursor:pointer;">
+                                                <span>
+
+                                                    Her Ay Düzenli Bağış
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="c-item-01-BB-01" id="bagis-yap" style="display:none;">
+                                            <div class="c-unit-01-BB-01">
+                                                <h2 class="c-unit-01-BB-01-B">Her ayın</h2>
+                                            </div>
+                                            <div class="c-unit-01-BB-01">
+                                                <input class="c-unit-01-BB-01-A input-fix-01" placeholder="6" type="text" name="name" value="" />
+                                                <h2 class="c-unit-01-BB-01-B">. günü çekilsin</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-item-02-C">
+
+                                        <a href="javascript:void(0);" class="c-item-01-C-01">
+                                            <span class="c-unit-01">
+                                                TOPLAM BAĞIŞ
+                                            </span>
+                                            <span class="c-unit-02">
+                                                120<span class="ff-default">₺</span>
+                                            </span>
+                                        </a>
+                                        <a href="#tabber-header" class="c-item-01-C-02" data-tab-no="3" onclick="Feux.Checkout.Tabber.changeTab(this);">
+                                            ÖDEMEYİ TAMAMLA
+                                        </a>
+                                    </div>
+                                </div>
+                                <img src="Content/Visuals/carts.png" alt="Alternate Text" class="c-item-02" />
+
+                            </div>
+
+                            <a href="#tabber-header" class="c-container-04" data-tab-no="1" onclick="Feux.Checkout.Tabber.changeTab(this);">
+                                <img src="Content/Visuals/arrow-left.png" alt="Alternate Text" class="c-item-01">
+                                <span class="c-item-02">Bağış Özeti’ne Dön</span>
+                            </a>
+                        </div>
+                        <div class="tab" id="tab-03" data-tab-no="3">
+                            <!--on classı eklendiğinde hata sayfası gösterilecek on olmadığında başarılı sayfası görünecek şekilde ayarlandı-->
+                            <div class="c-container-01 on">
+                                <img src="Content/Visuals/complete.png" alt="Alternate Text" class="c-item-01">
+                                <span class="c-item-02">
+                                    Bağışınız
+                                    <strong>
+                                        Tamamlanmıştır.
+                                    </strong>
+                                </span>
+                                <img class="c-item-03" src="Content/Visuals/error.png" alt="Alternate Text" />
+                                <span class="c-item-04">Hata</span>
+                            </div>
+                            <a href="#tabber-header" class="c-container-02" data-tab-no="1" onclick="Feux.Checkout.Tabber.changeTab(this);">
+                                <img src="Content/Visuals/arrow-left.png" alt="Alternate Text" class="c-item-01">
+                                <span class="c-item-02">Ana sayfaya Geri Dön</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="comp-section-18 v2 mt-sm1-70 odeme">
+                        <div class="c-wrapper">
+                            <h2 class="c-item mt-0"> <strong>Önerilen</strong> Bağışlar </h2>
+                        </div>
+                        <div class="c-wrapper">
+                            <div class="comp-cart-01">
+                                <img src="Content/Visuals/Home/a3.png" alt="Alternate Text" class="c-unit-01" />
+
+                                <div class="c-unit-02 mt-px">
+                                    <span class="c-unit-02-A">
+                                        <span class="status" style="width:10%">
+
+                                        </span>
+                                    </span>
+                                    <span class="c-unit-02-B">
+                                        %10
+                                    </span>
+                                </div>
+                                <div class="c-unit-03">
+                                    <div class="c-unit-03-A">
+                                        <span class="c-unit-03-A-01">
+                                            3.980<span class="ff-default">₺</span>
+                                        </span>
+                                        <span class="c-unit-03-A-02">
+                                            Toplanan
+                                        </span>
+                                    </div>
+                                    <div class="c-unit-03-B">
+                                        <span class="c-unit-03-B-01">
+                                            30.000<span class="ff-default">₺</span>
+                                        </span>
+                                        <span class="c-unit-03-B-02">
+                                            Hedef
+                                        </span>
+                                    </div>
+                                </div>
+                                <h4 class="c-unit-04">
+                                    ÇAD <br />
+                                    SU KUYUSU
+                                </h4>
+                                <form class="c-unit-05">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Tutar" data-maskformat="numeric" name="total" />
+                                        <label>
+                                            <span class="ff-default">₺</span>
+                                        </label>
+                                    </div>
+                                    <button>
+                                        <span>Bağış Yap</span>
+                                        <img src="Content/Visuals/Project/heart.png" alt="Alternate Text" />
+
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="comp-cart-01">
+                                <img src="Content/Visuals/Home/a3.png" alt="Alternate Text" class="c-unit-01" />
+
+                                <div class="c-unit-02 mt-px">
+                                    <span class="c-unit-02-A">
+                                        <span class="status" style="width:10%">
+
+                                        </span>
+                                    </span>
+                                    <span class="c-unit-02-B">
+                                        %10
+                                    </span>
+                                </div>
+                                <div class="c-unit-03">
+                                    <div class="c-unit-03-A">
+                                        <span class="c-unit-03-A-01">
+                                            3.980<span class="ff-default">₺</span>
+                                        </span>
+                                        <span class="c-unit-03-A-02">
+                                            Toplanan
+                                        </span>
+                                    </div>
+                                    <div class="c-unit-03-B">
+                                        <span class="c-unit-03-B-01">
+                                            30.000<span class="ff-default">₺</span>
+                                        </span>
+                                        <span class="c-unit-03-B-02">
+                                            Hedef
+                                        </span>
+                                    </div>
+                                </div>
+                                <h4 class="c-unit-04">
+                                    ÇAD <br />
+                                    SU KUYUSU
+                                </h4>
+                                <form class="c-unit-05">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Tutar" data-maskformat="numeric" name="total" />
+                                        <label>
+                                            <span class="ff-default">₺</span>
+                                        </label>
+                                    </div>
+                                    <button>
+                                        <span>Bağış Yap</span>
+                                        <img src="Content/Visuals/Project/heart.png" alt="Alternate Text" />
+
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="comp-cart-01">
+                                <img src="Content/Visuals/Home/a7.png" alt="Alternate Text" class="c-unit-01">
+                                <h4 class="c-unit-04">
+                                    MESCİT PROJESİ  Etiyopya kopya
+                                </h4>
+                                <div class="c-unit-06">
+                                    <span class="c-unit-06-A">
+                                        30.000<span class="ff-default">₺</span>
+                                    </span>
+                                </div>
+
+                                <form class="c-unit-05">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Tutar" data-maskformat="numeric" name="total">
+                                        <label>
+                                            <span class="ff-default">₺</span>
+                                        </label>
+                                    </div>
+                                    <button>
+                                        <span>Bağış Yap</span>
+                                        <img src="Content/Visuals/Project/heart.png" alt="Alternate Text">
+
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="comp-cart-01">
+                                <img src="Content/Visuals/Home/a6.png" alt="Alternate Text" class="c-unit-01">
+                                <h4 class="c-unit-04">
+                                    ÇAD <br>
+                                    SU KUYUSU
+                                </h4>
+                                <p class="c-unit-08">
+                                    Mescit Projesi Afrika'da desteklenmektedir.
+                                </p>
+
+
+                                <form class="c-unit-05">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Tutar" data-maskformat="numeric" name="total">
+                                        <label>
+                                            <span class="ff-default">₺</span>
+                                        </label>
+                                    </div>
+                                    <button>
+                                        <span>Bağış Yap</span>
+                                        <img src="Content/Visuals/Project/heart.png" alt="Alternate Text">
+
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="comp-cart-01">
+                                <img src="Content/Visuals/Home/a5.png" alt="Alternate Text" class="c-unit-01">
+                                <h4 class="c-unit-04">
+                                    ÇAD <br>
+                                    SU KUYUSU
+                                </h4>
+                                <p class="c-unit-08">
+                                    Mescit Projesi Afrika'da desteklenmektedir.
+                                </p>
+
+                                <a class="c-unit-09">
+                                    Projeyi Göster
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="c-wrapper" data-tab-pagination-container="true">
+                        <div class="paging-container">
+                            <a href="#tabber-header" class="c-item-01 active" data-tab-no="1" onclick="Feux.Checkout.Tabber.changeTab(this);">
+                                1
+                            </a>
+                            <a href="#tabber-header" class="c-item-01" data-tab-no="2" onclick="Feux.Checkout.Tabber.changeTab(this);">
+                                2
+                            </a>
+                            <a href="#tabber-header" class="c-item-01" data-tab-no="3" onclick="Feux.Checkout.Tabber.changeTab(this);">
+                                3
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+
+            </main>
+
+            <!--<div class="pre-footer">
+                <img class="pre-footer-img" src="Content/Visuals/iyilik-hareketi.png" alt="Alternate Text" />
+                <div class="newsletter">
+                    <h4 class="c-item-01">
+                        Projelerle ilgili haftalık güncellemelerimizi kaçırmayın.
+                    </h4>
+                    <form class="c-item-02" id="newsletter">
+                        <div class="form-group">
+                            <input id="newsletter-email" placeholder="E-posta adresinizi giriniz..." type="text" name="newsletter-email" data-rule-required="true" data-rule-email="true" maxlength="50" autocomplete="new-password"
+                                   class="tb-01 c-item-02-A" onkeyup="this.setAttribute('value', this.value);">
+                        </div>
+                        <div class="g-recaptcha" id="newsletterRecaptcha"></div>
+
+                        <a href="javascript:void(0)" class="c-item-02-B" onclick="Feux.Form.UX.checkValidationAndSubmitForm({ ev: event, sender: this });">
+                            ABONE OL
+                        </a>
+                    </form>
+                </div>
+            </div>-->
+            <footer class="comp-footer-02">
+                <div class="c-wrapper">
+
+                    <div class="c-container-01">
+                        <div class="social-medias">
+                            <a href="javascript:void(0);" class="social-item">
+                                <img src="Content/Visuals/Logos/facebook2.png" />
+                            </a>
+                            <a href="javascript:void(0);" class="social-item">
+                                <img src="Content/Visuals/Logos/instagram2.png" />
+                            </a>
+                            <a href="javascript:void(0);" class="social-item">
+                                <img src="Content/Visuals/Logos/twitter2.png" />
+                            </a>
+                            <a href="javascript:void(0);" class="social-item">
+                                <img src="Content/Visuals/Logos/youtube2.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <hr class="hr-B" />
+                    <div class="c-container-02">
+                        2022 - Deniz Feneri Derneği
+                    </div>
+                </div>
+            </footer>
+            <div id="loginModal" data-modal-section="content" class="val-A">
+                <div data-modal-section="header">
+
+                </div>
+                <div data-modal-section="body">
+
+                    <div class="c-container">
+                        <img class="modal-img-01" src="Content/Visuals/Home/01.png" alt="Alternate Text" />
+                        <form class="c-coloumn">
+                            <img class="c-item-01" src="Content/Visuals/modal-fotosu.png" alt="Alternate Text" />
+                            <div class="c-item-02">
+                                <img class="c-item-02-A" src="Content/Visuals/modal-kafa-fotosu.png" alt="Alternate Text" />
+                                <h3 class="c-item-02-B">Giriş Yap</h3>
+                                <a href="#">Üye Ol</a>
+                            </div>
+                            <input id="payment-phone" placeholder="Cep Telefonu Numarası" type="text" name="payment-phone" data-maskformat="phone" data-rule-required="true" data-rule-minlength="15" autocomplete="new-password" class="tb-01 c-item-03" onkeyup="this.setAttribute('value', this.value);" maxlength="15">
+                            <input id="sms-password" placeholder="SMS Şifresi" type="text" name="sms-password" autocomplete="new-password" class="tb-01 c-item-04" onkeyup="this.setAttribute('value', this.value);" style="display:none;">
+
+                            <div class="c-item-05">
+                                <div class="c-item-05-A">
+                                    <input id="remember-me" type="checkbox" class="c-item-05-A-04" style="cursor:pointer;" />
+                                    <label for="remember-me" class="c-item-05-A-02" style="cursor:pointer;">Bilgilerimi Hatırla </label>
+                                </div>
+
+                            </div>
+                            <a class="c-item-06" href="javascript:void(0);" onclick="Feux.Form.UX.submitConfirmCode(this);">Giriş Yap</a>
+                        </form>
+                    </div>
+
+
+                </div>
+                <div data-modal-section="footer" class="footer-01">
+
+                </div>
+            </div>
+        </div>
+
+        <section id="modal-wrapper">
+            <div id="modal-content" data-submit-button="modalFormSubmitBtn">
+                <div id="modal-header"></div>
+                <div id="modal-body"></div>
+                <div id="modal-footer"></div>
+                <a id="modal-close" href="javascript:void(0);" onclick="Feux.Modal.Actions.closeClick({ ev: event, sender: this });"></a>
+            </div>
+        </section>
+
+        <div id="overlay-wrapper" onclick="Feux.Base.overlayClick({ sender: this });"></div>
+    </div>
+
+    <div id="mq-values">
+        <div id="mq-xs1"></div>
+        <div id="mq-xs2"></div>
+        <div id="mq-sm1"></div>
+        <div id="mq-sm2"></div>
+        <div id="mq-md"></div>
+        <div id="mq-lg"></div>
+        <div id="mq-xl"></div>
+    </div>
+
+    <!-- Begin:PluginScripts-->
+    <script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>
+    <script src="Content/Plugins/Jquery.Library/jquery-3.6.0.min.js"></script>
+    <script src="Content/Plugins/Jquery.Validation/jquery.validate.js"></script>
+    <script src="Content/Plugins/Jquery.Mask/jquery.mask.js"></script>
+    <script src="Content/Plugins/select2-4.1.0-rc.0/js/select2.min.js"></script>
+    <script src="Content/Plugins/OwlCarousel/owl.carousel.min.js"></script>
+    <script src="Content/Plugins/Dropzone/dropzone.min.js"></script>
+    <!-- End -->
+
+    <script src="Content/Scripts/Base/Feux.Common.Global.js"></script>
+    <script src="Content/Scripts/Base/Feux.Common.Helper.js"></script>
+    <script src="Content/Scripts/Base/Feux.Common.Base.js"></script>
+    <script src="Content/Scripts/Base/Feux.Common.UX.js"></script>
+    <script src="Content/Scripts/Base/Feux.Common.jQuery.js"></script>
+    <script src="Content/Scripts/Base/Feux.Modal.Base.js"></script>
+    <script src="Content/Scripts/Base/Feux.Menu.Primary.js"></script>
+    <script src="Content/Scripts/Feux/Layout.js"></script>
+    <script src="Content/Scripts/Feux/Feux.Sliders.js"></script>
+    <script src="Content/Scripts/Feux/Checkout.js"></script>
+    <script src="Content/Scripts/Form/Feux.Form.Base.js"></script>
+    <script src="Content/Scripts/Form/Feux.Form.Validation.js"></script>
+    <script src="Content/Scripts/Form/Feux.Form.Plugin.js"></script>
+    <script src="Content/Scripts/Base/Feux.Search.Base.js"></script>
+
+</body>
+</html>

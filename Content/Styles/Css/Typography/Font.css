@@ -1,0 +1,67 @@
+/* Primary font-face */
+@font-face {
+  font-family: "Gotham Rnd";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: normal;
+  src: url("../../../Content/Files/Fonts/Gotham/GothamRnd-Bold.otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Gotham Rnd";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: normal;
+  src: url("../../../Content/Files/Fonts/Gotham/GothamRnd-Medium.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gotham Rnd";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: normal;
+  src: url("../../../Content/Files/Fonts/Gotham/GothamRnd-Book.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Gotham Rnd";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: normal;
+  src: url("../../../Content/Files/Fonts/Gotham/GothamRnd-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Great Vibes";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: normal;
+  src: url("../../../Content/Files/Fonts/GreatVibes/GreatVibes-Regular.ttf");
+  font-weight: 400;
+}
+/* Base font syles */
+body {
+  font-family: "Gotham Rnd";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: normal;
+}
+body * {
+  font-family: "Gotham Rnd" !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.ff-default {
+  font-family: Sans-serif !important;
+}
+
+/*# sourceMappingURL=Font.css.map */

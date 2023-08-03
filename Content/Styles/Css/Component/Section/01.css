@@ -1,0 +1,78 @@
+.comp-section-01 {
+  z-index: 2;
+}
+
+@media all and (max-width: 767px) {
+  .comp-section-01 {
+    margin-top: -35px;
+  }
+  .comp-section-01 > .c-wrapper .c-item-01 {
+    width: calc(100% - 25px);
+    margin: 0 auto;
+    height: 275px;
+    z-index: 1;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .comp-section-01 > .c-wrapper .c-item-02 {
+    position: absolute;
+    right: -7px;
+    bottom: -24px;
+    width: 90px;
+    height: 77px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1299px) {
+  .comp-section-01 {
+    margin-top: -35px;
+  }
+  .comp-section-01 > .c-wrapper .c-item-01 {
+    width: 460px;
+    margin: 0 auto;
+    height: 275px;
+    z-index: 1;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .comp-section-01 > .c-wrapper .c-item-02 {
+    position: absolute;
+    right: 100px;
+    bottom: -24px;
+    width: 90px;
+    height: 77px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media all and (min-width: 1300px) {
+  .comp-section-01 {
+    margin-top: -50px;
+  }
+  .comp-section-01 > .c-wrapper .c-item-01 {
+    margin: 0 auto;
+    width: 990px;
+    height: 370px;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+  .comp-section-01 > .c-wrapper .c-item-02 {
+    position: absolute;
+    right: 105px;
+    bottom: -35px;
+    width: 155px;
+    height: 133px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+/*# sourceMappingURL=01.css.map */

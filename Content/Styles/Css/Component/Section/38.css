@@ -1,0 +1,180 @@
+@media all and (max-width: 767px) {
+  .comp-section-38 {
+    display: flex;
+    background-color: #f82e46;
+    overflow: hidden;
+    padding: 34px 20px 20px 26px;
+  }
+  .comp-section-38 > .c-container-01 > .c-item-01 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Great Vibes" !important;
+    margin-bottom: 16px;
+  }
+  .comp-section-38 > .c-container-01 > .c-item-02 > li {
+    margin-bottom: 4px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+  .comp-section-38 > .c-container-01 > .c-item-02 > li:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: calc(50% - 3px);
+    background-color: #ffffff;
+  }
+  .comp-section-38 > .c-container-02 {
+    display: none;
+  }
+  .comp-section-38 > .c-container-03 {
+    position: absolute;
+    top: -14px;
+    right: 0;
+    width: 120px;
+    height: auto;
+  }
+  .comp-section-38 > .c-container-04 {
+    position: absolute;
+    bottom: -14px;
+    right: 0;
+    width: 150px;
+    height: auto;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1299px) {
+  .comp-section-38 {
+    display: flex;
+    background-color: #f82e46;
+    overflow: hidden;
+    padding: 48px calc(50% - 352px) 20px calc(50% - 352px);
+  }
+  .comp-section-38 > .c-container-01 > .c-item-01 {
+    font-size: 48px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Great Vibes" !important;
+    margin-bottom: 16px;
+  }
+  .comp-section-38 > .c-container-01 > .c-item-02 > li {
+    margin-bottom: 4px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+  .comp-section-38 > .c-container-01 > .c-item-02 > li:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: calc(50% - 3px);
+    background-color: #ffffff;
+  }
+  .comp-section-38 > .c-container-02 {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+  }
+  .comp-section-38 > .c-container-02 > .c-item-01 {
+    width: 256px;
+    height: 256px;
+    object-fit: cover;
+    z-index: 2;
+  }
+  .comp-section-38 > .c-container-02 > .c-item-02 {
+    position: absolute;
+    top: -34px;
+    left: -80px;
+    z-index: 1;
+    width: 108px;
+    height: auto;
+  }
+  .comp-section-38 > .c-container-03 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: auto;
+  }
+  .comp-section-38 > .c-container-04 {
+    position: absolute;
+    bottom: -14px;
+    left: calc(50% - 50px);
+  }
+}
+@media all and (min-width: 1300px) {
+  .comp-section-38 {
+    display: flex;
+    width: calc(100% - (50% - 640px));
+    padding: 68px 46px 68px calc(50% - 640px);
+    background-color: #f82e46;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    overflow: hidden;
+  }
+  .comp-section-38 > .c-container-01 > .c-item-01 {
+    font-size: 74px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Great Vibes" !important;
+    margin-bottom: 32px;
+  }
+  .comp-section-38 > .c-container-01 > .c-item-02 > li {
+    margin-bottom: 2px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    line-height: 33px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .comp-section-38 > .c-container-01 > .c-item-02 > li:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: calc(50% - 3px);
+    background-color: #ffffff;
+  }
+  .comp-section-38 > .c-container-02 {
+    position: absolute;
+    top: 24px;
+    right: 48px;
+  }
+  .comp-section-38 > .c-container-02 > .c-item-01 {
+    width: 532px;
+    height: 532px;
+    object-fit: cover;
+    z-index: 2;
+  }
+  .comp-section-38 > .c-container-02 > .c-item-02 {
+    position: absolute;
+    top: -34px;
+    left: -122px;
+    z-index: 1;
+  }
+  .comp-section-38 > .c-container-03 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .comp-section-38 > .c-container-04 {
+    position: absolute;
+    bottom: -14px;
+    left: calc(50% - 50px);
+  }
+}
+
+/*# sourceMappingURL=38.css.map */

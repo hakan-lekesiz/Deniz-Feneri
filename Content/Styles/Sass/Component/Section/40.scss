@@ -1,0 +1,190 @@
+﻿@import "../../Base/Colour.scss";
+@import "../../Base/Global.scss";
+ 
+//xs1 and xs2
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    .comp-section-40 {
+        padding: 48px 0;
+
+        .c-item-01 {
+            font-size: 26px;
+            color: #f82e46;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .c-item-02 {
+            display: flex;
+            justify-content: center;
+            flex-wrap:wrap;
+            gap:48px 24px;
+
+            .c-unit {
+                width: 180px;
+                height: 120px;
+                border-radius: 8px;
+                padding: 16px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                background-color: #d8ecf7;
+
+                .c-unit-01 {
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #051168;
+                    text-align: center;
+                }
+
+                .c-unit-02 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    color: #051168;
+                    text-align: center;
+                }
+
+                .c-unit-03 {
+                    position: absolute;
+                    bottom: -16px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 80px;
+                    height: 32px;
+                    border-radius: 6px;
+                    background-color: #f9586b;
+                    font-size: 18px;
+                    line-height: 32px;
+                    color: #051168;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+//sm1 and sm2
+@media all and (min-width: #{$mq-sm1 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    .comp-section-40 {
+        padding: 72px 0;
+
+        .c-item-01 {
+            font-size: 42px;
+            color: #f82e46;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .c-item-02 {
+            display: flex;
+            justify-content: space-between;
+
+            .c-unit {
+                width: 160px;
+                height: 110px;
+                border-radius: 8px;
+                padding: 16px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                background-color: #d8ecf7;
+
+                .c-unit-01 {
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #051168;
+                    text-align: center;
+                }
+
+                .c-unit-02 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    color: #051168;
+                    text-align: center;
+                }
+
+                .c-unit-03 {
+                    position: absolute;
+                    bottom: -16px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 80px;
+                    height: 32px;
+                    border-radius: 6px;
+                    background-color: #f9586b;
+                    font-size: 18px;
+                    line-height: 32px;
+                    color: #051168;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+//md+
+@media all and (min-width: #{$mq-md + "px"}) {
+    .comp-section-40 {
+        padding: 80px 0;
+
+        .c-item-01 {
+            font-size: 52px;
+            color: #f82e46;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .c-item-02 {
+            display: flex;
+            justify-content:space-between;
+
+            .c-unit {
+                width: 260px;
+                height: 160px;
+                border-radius: 12px;
+                padding: 32px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                background-color: #d8ecf7;
+
+                .c-unit-01 {
+                    font-size: 32px;
+                    line-height: 40px;
+                    color: #051168;
+                    text-align: center;
+                }
+
+                .c-unit-02 {
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    color: #051168;
+                    text-align: center;
+                }
+
+                .c-unit-03 {
+                    position: absolute;
+                    bottom: -20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 140px;
+                    height: 40px;
+                    border-radius: 6px;
+                    background-color: #f9586b;
+                    font-size: 25px;
+                    line-height: 40px;
+                    color: #051168;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

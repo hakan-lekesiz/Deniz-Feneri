@@ -1,0 +1,686 @@
+@import "../Base/Colour.scss";
+@import "../Base/Global.scss";
+
+#hamburger-menu-wrapper,
+#menu-primary,
+#account-container,
+#menu-socialmedia {
+    display: none;
+}
+
+#menu-primary {
+    ul, .level-2-header, .submenu-ad {
+        display: none;
+    }
+}
+
+#menu-primary {
+    .submenu-ad {
+        top: -1000px;
+    }
+}
+
+#hamburger-menu-wrapper {
+    position: fixed;
+    z-index: 300;
+    overflow: hidden;
+     
+}
+
+/* Common XS1 and XS2 */
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    #page-wrapper.menu-on {
+        #hamburger-menu-wrapper {
+        }
+
+        &.menu-off {
+            #hamburger-menu-wrapper {
+            }
+        }
+    }
+
+    #hamburger-menu-wrapper {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        transform: translateX(-100%);
+
+        #menu-content-wrapper {
+            height: 100%;
+        }
+
+        #menu-animation-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 300%;
+            height: 100%;
+        }
+
+        #menu-screen-1,
+        #menu-screen-2,
+        #menu-screen-3 {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: start;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        #menu-screen-1 {
+            justify-content: space-between;
+        }
+
+        #site-logo-menu {
+            display: flex;
+            order: 0;
+            margin: 24px 0 0 20px;
+            width: 96px;
+            height: 57px;
+
+            .logotype-negative {
+                display: none;
+            }
+
+            .logotype-positive {
+                display: block;
+            }
+        }
+
+        #close-button-menu {
+            position: absolute;
+            top: 34px;
+            right: 28px;
+            display: flex;
+            width: 32px;
+            height: 32px;
+        }
+
+        #menu-primary {
+            display: flex;
+            order: 0;
+            width: 100%;
+
+            #submenu-animation-wrapper {
+                width: 100%;
+            }
+        }
+
+        #buttons-container-01 {
+            width: 100%;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #051168;
+            display: flex;
+            align-items: center;
+
+            #search-button-menu {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                border: 1px solid #FFF;
+                margin-right: 10px;
+            }
+
+            #language-button-menu {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                border: 1px solid #FFF;
+                font-size: 11px;
+                color: #fdfdfe;
+                font-weight: 500;
+                margin-right: 15px;
+            }
+
+            #account-numbers-button-menu {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 32px;
+                padding: 0 12px;
+                border-radius: 10px;
+                background-color: #00a0fc;
+                font-size: 11px;
+                color: #ffffff;
+                font-weight: 700;
+                margin-right: 15px;
+            }
+
+            #donation-button-menu {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 32px;
+                padding: 0 12px;
+                border-radius: 10px;
+                background-color: #f82e46;
+                font-size: 11px;
+                color: #ffffff;
+                font-weight: 700;
+           
+                .donate-basket, .basket {
+                    display: none;
+                }
+            }
+        }
+
+
+        .ul-level-1, .ul-level-2, .ul-level-3 {
+            display: block;
+            width: 100%;
+
+            > li {
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-darkblue-050;
+                }
+
+                &.hasSubmenu {
+                    background-image: svg-background-image('<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11.25 3.75L10.3562 4.62063L15.0938 9.375H2.5V10.625H15.0938L10.3562 15.3581L11.25 16.25L17.5 10L11.25 3.75Z" fill="#486488"/> </svg>');
+                    background-position: right 8px center;
+                    background-repeat: no-repeat;
+                }
+
+                > a {
+                    display: flex;
+                    align-items: center;
+                    min-height: 52px;
+                    padding-right: 56px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 0.02em;
+                    color: $color-darkblue-900;
+                }
+            }
+        }
+
+        .ul-level-1 {
+            padding: 0 20px;
+            margin-top: 40px;
+        }
+
+        .ul-level-2,
+        .ul-level-3 {
+            display: none;
+            padding: 0 20px;
+            margin-top: 16px;
+
+            &.on {
+                display: block;
+            }
+        }
+
+        .main-menu-btn {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 56px;
+            padding: 8px 0 8px 24px;
+            background-color: #F7F7FC;
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: #221F44;
+
+            &:before {
+                content: '';
+                display: flex;
+                width: 24px;
+                height: 24px;
+                background-image: svg-background-image('<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11.8714 11.7803L14.3411 9.31066L13.2804 8.25L9.75007 11.7803L13.2804 15.3107L14.3411 14.25L11.8714 11.7803Z" fill="#221F44"/> </svg> ');
+            }
+        }
+
+        .level-2-header, .level-3-header {
+            display: none;
+            align-items: center;
+            width: 100%;
+            height: 68px;
+            padding: 0 0 0 20px;
+            margin-top: 24px;
+            background-color: $color-darkblue-025;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            color: $color-darkblue-900;
+
+            &.on {
+                display: flex;
+            }
+
+            &:before {
+                content: '';
+                display: flex;
+                width: 20px;
+                height: 20px;
+                margin-right: 12px;
+                background-image: svg-background-image('<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8.75 16.25L9.63125 15.3687L4.89375 10.625H17.5V9.375H4.89375L9.63125 4.63125L8.75 3.75L2.5 10L8.75 16.25Z" fill="#0A2240"/> </svg> ');
+            }
+        }
+
+        .level-2-screentitle, .level-3-screentitle {
+            display: none;
+        }
+    }
+}
+
+/* Common SM1 and SM2 */
+@media all and (min-width: #{$mq-sm1 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    #page-wrapper.menu-on {
+        #hamburger-menu-wrapper {
+        }
+
+        &.menu-off {
+            #hamburger-menu-wrapper {
+            }
+        }
+    }
+
+    #hamburger-menu-wrapper {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 375px;
+        background-color: #fff;
+        transform: translateX(-100%);
+
+        #menu-content-wrapper {
+            height: 100%;
+        }
+
+        #menu-animation-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 300%;
+            height: 100%;
+        }
+
+        #menu-screen-1,
+        #menu-screen-2,
+        #menu-screen-3 {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: start;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        #menu-screen-1 {
+            justify-content: space-between;
+        }
+
+        #site-logo-menu {
+            display: flex;
+            order: 0;
+            margin: 24px 0 0 20px;
+            width: 96px;
+            height: 57px;
+
+            .logotype-negative {
+                display: none;
+            }
+
+            .logotype-positive {
+                display: block;
+            }
+        }
+
+        #close-button-menu {
+            position: absolute;
+            top: 34px;
+            right: 28px;
+            display: flex;
+            width: 32px;
+            height: 32px;
+        }
+
+        #menu-primary {
+            display: flex;
+            order: 0;
+            width: 100%;
+
+            #submenu-animation-wrapper {
+                width: 100%;
+            }
+        }
+
+
+        #buttons-container-01 {
+            width: 100%;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #051168;
+            display: flex;
+            align-items: center;
+
+            #search-button-menu {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                border: 1px solid #FFF;
+                margin-right: 10px;
+            }
+
+            #language-button-menu {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                border: 1px solid #FFF;
+                font-size: 11px;
+                color: #fdfdfe;
+                font-weight: 500;
+                margin-right: 10px;
+            }
+
+            #account-numbers-button-menu {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 32px;
+                padding: 0 12px;
+                border-radius: 10px;
+                background-color: #00a0fc;
+                font-size: 11px;
+                color: #ffffff;
+                font-weight: 700;
+                margin-right: 10px;
+            }
+
+            #donation-button-menu {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 32px;
+                padding: 0 12px;
+                border-radius: 10px;
+                background-color: #f82e46;
+                font-size: 11px;
+                color: #ffffff;
+                font-weight: 700;
+
+                .donate-basket, .basket {
+                    display: none;
+                }
+            }
+        }
+
+
+        .ul-level-1, .ul-level-2, .ul-level-3 {
+            display: block;
+            width: 100%;
+
+            > li {
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-darkblue-050;
+                }
+
+                &.hasSubmenu {
+                    background-image: svg-background-image('<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11.25 3.75L10.3562 4.62063L15.0938 9.375H2.5V10.625H15.0938L10.3562 15.3581L11.25 16.25L17.5 10L11.25 3.75Z" fill="#486488"/> </svg>');
+                    background-position: right 8px center;
+                    background-repeat: no-repeat;
+                }
+
+                > a {
+                    display: flex;
+                    align-items: center;
+                    min-height: 52px;
+                    padding-right: 56px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 0.02em;
+                    color: $color-darkblue-900;
+                }
+            }
+        }
+
+        .ul-level-1 {
+            padding: 0 20px;
+            margin-top: 40px;
+        }
+
+        .ul-level-2,
+        .ul-level-3 {
+            display: none;
+            padding: 0 20px;
+            margin-top: 16px;
+
+            &.on {
+                display: block;
+            }
+        }
+
+        .main-menu-btn {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 56px;
+            padding: 8px 0 8px 24px;
+            background-color: #F7F7FC;
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: #221F44;
+
+            &:before {
+                content: '';
+                display: flex;
+                width: 24px;
+                height: 24px;
+                background-image: svg-background-image('<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11.8714 11.7803L14.3411 9.31066L13.2804 8.25L9.75007 11.7803L13.2804 15.3107L14.3411 14.25L11.8714 11.7803Z" fill="#221F44"/> </svg> ');
+            }
+        }
+
+        .level-2-header, .level-3-header {
+            display: none;
+            align-items: center;
+            width: 100%;
+            height: 68px;
+            padding: 0 0 0 20px;
+            margin-top: 24px;
+            background-color: $color-darkblue-025;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            color: $color-darkblue-900;
+
+            &.on {
+                display: flex;
+            }
+
+            &:before {
+                content: '';
+                display: flex;
+                width: 20px;
+                height: 20px;
+                margin-right: 12px;
+                background-image: svg-background-image('<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8.75 16.25L9.63125 15.3687L4.89375 10.625H17.5V9.375H4.89375L9.63125 4.63125L8.75 3.75L2.5 10L8.75 16.25Z" fill="#0A2240"/> </svg> ');
+            }
+        }
+
+        .level-2-screentitle, .level-3-screentitle {
+            display: none;
+        }
+    }
+}
+
+@media all and (min-width: #{$mq-md + "px"}) {
+    #menu-primary {
+        height: 100%;
+        //
+        // Level 1 <ul>
+        .ul-level-1 {
+            display: flex;
+            height: 100%;
+            //
+            // Level 1 <li>
+            > li {
+                display: flex;
+                align-items: flex-end;
+
+                &:not(:last-child) {
+                    margin-right: 28px;
+                }
+                // Level 1 <li> link item
+                > a {
+                    padding: 0 8px;
+                    height: calc(100% - 8px);
+                    display: flex;
+                    align-items: center;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #FFF;
+                    transition: background-color 0.2s;
+                }
+
+                &:hover {
+                    > a {
+                        background-color: #00a0fc;
+                    }
+                }
+            }
+            //
+            // Level 1 <li> with submenu
+            > li.hasSubmenu {
+                // Level 1 <li> link item
+                > a {
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        height: 6px;
+                        bottom: -6px;
+                        left: 0;
+                        right: 0;
+                        visibility: hidden;
+                        opacity: 0;
+                        background-color: #00a0fc;
+                        @include dynamicTransition(opacity 0.2s, visibility 0.0s 0.2s);
+                    }
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        bottom: 12px;
+                        left: calc(50% - 5px);
+                        visibility: hidden;
+                        opacity: 0;
+                        width: 0px;
+                        height: 0px;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                        border-top: 8px solid #FFF;
+
+                        @include dynamicTransition(opacity 0.2s, visibility 0.0s 0.2s);
+                    }
+                }
+
+                &.submenu_v2 {
+
+                    .ul-level-2 {
+                        display: block;
+                    }
+                }
+
+                &:hover {
+                    > a {
+                        &:after, &:before {
+                            visibility: visible;
+                            opacity: 1;
+                            @include dynamicTransition(opacity 0.2s, visibility 0.0s);
+                        }
+                    }
+                }
+            }
+            //
+            // Level 1 <li> with submenu is on hover state
+            > li.hasSubmenu:hover {
+                // Level 2 <ul>
+                .ul-level-2 {
+                    visibility: visible;
+                    opacity: 1;
+                    @include dynamicTransition(opacity 0.2s, visibility 0.0s);
+                }
+                // Submenu background layer
+                &::after {
+                    visibility: visible;
+                    opacity: 1;
+                    @include dynamicTransition(opacity 0.2s, visibility 0.0s);
+                }
+            }
+        }
+        //
+        // Level 2 <ul>
+        .ul-level-2 {
+            position: absolute;
+            z-index: 1;
+            top: calc(100% + 6px);
+            left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 24px 0;
+            width: 190px;
+            background-color: #00a0fc;
+            border-bottom-right-radius: 24px;
+            visibility: hidden;
+            opacity: 0;
+            @include dynamicTransition(opacity 0.2s, visibility 0.0s 0.2s);
+            //
+            // Level 2 <li>
+            > li {
+                &.mobile-parent-menu-item {
+                    display: none;
+                }
+
+                display: flex;
+                flex-direction: column;
+                //
+                // Level 2 <li> link item
+                & > a {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    padding: 6px 0;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #ffffff;
+                    opacity: 1 !important;
+                    @include dynamicTransition(color 0.3s, background-color 0.3s);
+                    background-color: transparent;
+
+                    &:hover {
+                        color: #00a0fc;
+                        background-color: #FFF;
+                        font-weight: 700 !important;
+                    }
+                }
+            }
+        }
+    }
+}

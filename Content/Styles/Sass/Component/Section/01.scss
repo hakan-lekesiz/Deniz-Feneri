@@ -1,0 +1,95 @@
+﻿@import "../../Base/Colour.scss";
+@import "../../Base/Global.scss";
+
+.comp-section-01 {
+    z-index: 2;
+}
+//xs1 and xs2
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    .comp-section-01 {
+        margin-top: -35px;
+
+
+        > .c-wrapper {
+            .c-item-01 {
+                width: calc(100% - 25px);
+                margin: 0 auto;
+                height: 275px;
+                z-index: 1;
+                border-bottom-right-radius: 35px;
+                border-bottom-left-radius: 35px;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            .c-item-02 {
+                position: absolute;
+                right: -7px;
+                bottom: -24px;
+                width: 90px;
+                height: 77px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}
+//sm1 and sm2
+@media all and (min-width: #{$mq-sm1 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    .comp-section-01 {
+        margin-top: -35px;
+
+
+        > .c-wrapper {
+            .c-item-01 {
+                width: 460px;
+                margin: 0 auto;
+                height: 275px;
+                z-index: 1;
+                border-bottom-right-radius: 35px;
+                border-bottom-left-radius: 35px;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            .c-item-02 {
+                position: absolute;
+                right: 100px;
+                bottom: -24px;
+                width: 90px;
+                height: 77px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}
+//md+
+@media all and (min-width: #{$mq-md + "px"}) {
+    .comp-section-01 {
+        margin-top: -50px;
+
+        > .c-wrapper {
+            .c-item-01 {
+                margin: 0 auto;
+                width: 990px;
+                height: 370px;
+                object-fit: cover;
+                object-position: center;
+                z-index: 1;
+                border-bottom-right-radius: 50px;
+                border-bottom-left-radius: 50px;
+            }
+
+            .c-item-02 {
+                position: absolute;
+                right: 105px;
+                bottom: -35px;
+                width: 155px;
+                height: 133px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}

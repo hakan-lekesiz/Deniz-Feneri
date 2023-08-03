@@ -1,0 +1,81 @@
+﻿@import "../Base/Colour.scss";
+@import "../Base/Global.scss";
+
+
+.tab {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+    }
+}
+
+
+// UI
+.hr-A {
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    background-color: $color-darkblue-050;
+    height: 1px;
+    margin: 20px 0 40px 0;
+}
+.hr-B {
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    background-color: #051168;
+    height: 1px;
+    margin: 24px 0;
+}
+
+
+
+//xs1 and xs2
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    .mb-xs1-135 {
+        margin-bottom: 135px;
+    }
+    #up-button {
+        position: fixed;
+        right: 1px;
+        bottom: 30px;
+
+        img {
+            width: 30px;
+        }
+    }
+}
+
+//sm1 and sm2
+@media all and (min-width: #{$mq-sm1 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    #up-button {
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+
+        img {
+            width: 65px;
+        }
+    }
+}
+
+//md+
+@media all and (min-width: #{$mq-md + "px"}) {
+    .mb-md-125 {
+        margin-bottom: 125px;
+    }
+    #up-button {
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+
+        img {
+            width: 65px;
+        }
+    }
+}

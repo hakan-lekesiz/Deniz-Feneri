@@ -1,0 +1,61 @@
+﻿@import "../../Base/Colour.scss";
+@import "../../Base/Global.scss";
+
+
+
+//xs1 and xs2
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    .comp-section-28 {
+        z-index: 2;
+
+        > .c-wrapper {
+            .c-item-03 {
+                .c-item-03-A {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+//sm1 and sm2
+@media all and (min-width: #{$mq-sm1 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    .comp-section-28 {
+        z-index: 2;
+
+        > .c-wrapper {
+            .c-item-03 {
+                .c-item-03-A {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+//md+
+@media all and (min-width: #{$mq-md + "px"}) {
+    .comp-section-28 {
+        z-index: 2;
+        margin-bottom: 90px;
+
+        > .c-wrapper {
+            .c-item-03 {
+                .c-item-03-A {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    justify-content:flex-start;
+                    }
+            }
+        }
+    }
+}

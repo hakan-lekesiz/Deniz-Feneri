@@ -1,0 +1,513 @@
+﻿
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Deniz Feneri</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Deniz Feneri">
+
+    <link href="Content/Visuals/Logos/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/Plugins/OwlCarousel/owl.carousel.min.css" rel="stylesheet" />
+    <link href="Content/Plugins/select2-4.1.0-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link href="Content/Plugins/OwlCarousel/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="Content/Styles/Css/Base.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <div id="page-wrapper">
+        <div id="content-wrapper">
+
+
+            <header class="comp-header-01">
+                <div class="c-wrapper">
+                    <div class="menu-buttons">
+                        <a id="button-hamburger" href="javascript:void(0);" onclick="Feux.MenuPrimary.UX.show({ sender: this });">
+                            <img src="Content/Visuals/menu.png" />
+                        </a>
+                        <a id="button-menuclose" href="javascript:void(0);" onclick="Feux.MenuPrimary.UX.hide({ sender: this });">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 9.4L22.6 8L16 14.6L9.4 8L8 9.4L14.6 16L8 22.6L9.4 24L16 17.4L22.6 24L24 22.6L17.4 16L24 9.4Z" fill="black" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <nav id="menu-primary">
+                        <ul>
+
+                            <li>
+                                <a href="kurumsal.html">Kurumsal</a>
+                            </li>
+                            <li>
+                                <a href="calisma-alanlari.html">Çalışma Alanları</a>
+                            </li>
+                            <li class="hasSubmenu submenu_v2">
+                                <a href="faaliyet.html">Faaliyet</a>
+
+                                <ul>
+                                    <li class="mobile-parent-menu-item">
+                                        <a href="faaliyet.html">Genel Bağış</a>
+                                    </li>
+                                    <li>
+                                        <a href="faaliyet.html">Su Kuyusu</a>
+                                    </li>
+                                    <li>
+                                        <a href="faaliyet.html">Sağlık</a>
+                                    </li>
+                                    <li>
+                                        <a href="faaliyet.html">Eğitim</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/iletisim.html">İletişim</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <a id="site-logo" href="index.html">
+                        <img src="Content/Visuals/Logos/Logo.png" class="logotype-negative" />
+                        <img src="Content/Visuals/Logos/LogoDark.png" class="logotype-positive" />
+                    </a>
+
+                    <section id="activity-container">
+
+                        <a id="search-button" href="javascript:void(0);" onclick="Feux.Search.Actions.showSearchContainer({ sender: this, ev:event });">
+                            <img src="Content/Visuals/search-icon.png" />
+                        </a>
+
+                        <a id="language-button" href="javascript:void(0);">
+                            TR
+                        </a>
+                        <a id="account-button" href="javascript:void(0);">
+                            <img src="Content/Visuals/avatar.png" />
+                        </a>
+                        <a id="account-numbers-button" href="hesap-numaralari.html">
+                            Hesap Numaralarımız
+                        </a>
+                        <a id="donation-button" href="odeme-sayfasi.html">
+                            Bağış yap
+                        </a>
+
+                    </section>
+                </div>
+            </header>
+
+            <section id="search-area">
+                <div class="c-container-01">
+                    <a href="javascript:void(0);" onclick="Feux.Search.Actions.closeClick({ sender:this, ev:event });" class="c-item-01">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 24.4142L15.4142 23L9.41424 17H24V15H9.41424L15.4142 9L14 7.58579L5.58582 16L14 24.4142Z" fill="white" />
+                        </svg>
+                    </a>
+                    <input id="search-textbox" data-search-area-id="search-area"
+                           data-list-container-id="autoCompletePlaceholder"
+                           data-search-button-id="search-button" type="text" placeholder="Ara"
+                           onfocus="Feux.Search.Actions.focus({ sender: this });"
+                           oninput="Feux.Search.Actions.input({ sender: this, ev:event });" />
+                    <a href="javascript:void(0);" class="c-item-02">
+                        <svg width="32" height="32" class="c-unit-01" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 22C9.58172 22 6 18.4183 6 14C6 9.58172 9.58172 6 14 6C18.4183 6 22 9.58172 22 14C22 15.8482 21.3733 17.55 20.3208 18.9044L26.435 24.9975L25.0233 26.4142L18.9068 20.3189C17.552 21.3726 15.8493 22 14 22ZM20 14C20 17.3137 17.3137 20 14 20C10.6863 20 8 17.3137 8 14C8 10.6863 10.6863 8 14 8C17.3137 8 20 10.6863 20 14Z" fill="#D7D5E1" />
+                        </svg>
+                        <svg onclick="Feux.Search.Actions.closeClick({ sender:this, ev:event });" width="32" height="32" class="c-unit-02" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.41421 8L8 9.41421L15 16.4142L8 23.4142L9.41421 24.8284L16.4142 17.8284L23.4142 24.8284L24.8284 23.4142L17.8284 16.4142L24.8284 9.41421L23.4142 8L16.4142 15L9.41421 8Z" fill="#221F44" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="c-container-02" id="autoCompletePlaceholder" style="display:none;">
+                    <div class="focus-container">
+
+                        <div class="on-search">
+                            <div class="not-result">
+                                <div class="c-item-03">
+                                    <div class="c-item-03-A" id="search-result-items">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <main>
+                <section class="comp-showcase-01">
+                    <img class="background-img-01" src="Content/Visuals/account-number-showcase.jpg" alt="Alternate Text" />
+                    <div class="c-wrapper">
+                        <div class="c-container-01">
+                            <h1>
+                                Hesap Numaraları
+                            </h1>
+                            <div class="breadcrumb-01">
+                                <a href="index.html" class="c-item-01">
+                                    Anasayfa
+                                </a>
+                                <div class="seperator">
+                                    <img src="Content/Visuals/seperator.png" alt="Alternate Text" />
+                                </div>
+                                <a href="javascript:void(0);" class="c-item-01 active">
+                                    Hesaplar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="comp-section-01">
+                    <div class="c-wrapper">
+                        <img src="Content/Visuals/hesaplar-img-02.png" alt="Alternate Text" class="c-item-01" />
+                        <img src="Content/Visuals/hesaplar-img-03.png" alt="Alternate Text" class="c-item-02" />
+                    </div>
+                </section>
+
+                <section class="comp-section-02">
+                    <div class="c-wrapper">
+                        <div class="c-item-01">
+                            <div class="c-item-01-A">
+                                <img src="Content/Visuals/Logos/ziraat.png" alt="Alternate Text" class="c-item-01-A-01" />
+                            </div>
+                            <div class="c-item-01-B">
+                                <div class="c-unit">
+                                    <span class="c-unit-01">
+                                        IBAN (TL):
+                                    </span>
+                                    <span class="c-unit-02">
+                                        TR41 0020 9000 0000 9999 0000 01
+                                    </span>
+                                    <span class="c-unit-03">
+                                        <a href="javascript:void(0);" onclick="Feux.Layout.copyText(this);" data-value="TR41 0020 9000 0000 9999 0000 01">
+                                            <img src="Content/Visuals/file-icon.png" alt="Alternate Text" class="c-item-01-B-01" />
+                                        </a>
+                                        <span class="c-unit-03-B" style="display:none;">
+                                            KOPYALANDI
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="c-unit">
+                                    <span class="c-unit-01">
+                                        IBAN (TL):
+                                    </span>
+                                    <span class="c-unit-02">
+                                        TR41 0020 9000 0000 9999 0000 01
+                                    </span>
+                                    <span class="c-unit-03">
+                                        <a href="javascript:void(0);" onclick="Feux.Layout.copyText(this);" data-value="TR41 0020 9000 0000 9999 0000 01">
+                                            <img src="Content/Visuals/file-icon.png" alt="Alternate Text" class="c-item-01-B-01" />
+                                        </a>
+                                        <span class="c-unit-03-B" style="display:none;">
+                                            KOPYALANDI
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="c-unit">
+                                    <span class="c-unit-01">
+                                        IBAN (TL):
+                                    </span>
+                                    <span class="c-unit-02">
+                                        TR41 0020 9000 0000 9999 0000 01
+                                    </span>
+                                    <span class="c-unit-03">
+                                        <a href="javascript:void(0);" onclick="Feux.Layout.copyText(this);" data-value="TR41 0020 9000 0000 9999 0000 01">
+                                            <img src="Content/Visuals/file-icon.png" alt="Alternate Text" class="c-item-01-B-01" />
+                                        </a>
+                                        <span class="c-unit-03-B" style="display:none;">
+                                            KOPYALANDI
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-item-02">
+                            <span class="c-unit-01">
+                                Kurum Adı:
+                            </span>
+                            <span class="c-unit-02">
+                                DENİZ FENERİ YARDIMLAŞMA VE DAYANIŞMA DERNEĞİ
+                            </span>
+                        </div>
+                        <img src="Content/Visuals/Dikdörtgen 709.png" alt="Alternate Text" class="c-item-03">
+
+                    </div>
+
+                </section>
+
+                <section class="comp-section-02">
+                    <div class="c-wrapper">
+                        <div class="c-item-01">
+                            <div class="c-item-01-A">
+                                <img src="Content/Visuals/Logos/kuveyt.png" alt="Alternate Text" class="c-item-01-A-01" />
+                            </div>
+                            <div class="c-item-01-B">
+                                <div class="c-unit">
+                                    <span class="c-unit-01">
+                                        IBAN (TL):
+                                    </span>
+                                    <span class="c-unit-02">
+                                        TR41 0020 9000 0000 9999 0000 01
+                                    </span>
+                                    <span class="c-unit-03">
+                                        <a href="javascript:void(0);" onclick="Feux.Layout.copyText(this);" data-value="TR41 0020 9000 0000 9999 0000 01">
+                                            <img src="Content/Visuals/file-icon.png" alt="Alternate Text" class="c-item-01-B-01" />
+                                        </a>
+                                        <span class="c-unit-03-B" style="display:none;">
+                                            KOPYALANDI
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="c-unit">
+                                    <span class="c-unit-01">
+                                        IBAN (TL):
+                                    </span>
+                                    <span class="c-unit-02">
+                                        TR41 0020 9000 0000 9999 0000 01
+                                    </span>
+                                    <span class="c-unit-03">
+                                        <a href="javascript:void(0);" onclick="Feux.Layout.copyText(this);" data-value="TR41 0020 9000 0000 9999 0000 01">
+                                            <img src="Content/Visuals/file-icon.png" alt="Alternate Text" class="c-item-01-B-01" />
+                                        </a>
+                                        <span class="c-unit-03-B" style="display:none;">
+                                            KOPYALANDI
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="c-unit">
+                                    <span class="c-unit-01">
+                                        IBAN (TL):
+                                    </span>
+                                    <span class="c-unit-02">
+                                        TR41 0020 9000 0000 9999 0000 01
+                                    </span>
+                                    <span class="c-unit-03">
+                                        <a href="javascript:void(0);" onclick="Feux.Layout.copyText(this);" data-value="TR41 0020 9000 0000 9999 0000 01">
+                                            <img src="Content/Visuals/file-icon.png" alt="Alternate Text" class="c-item-01-B-01" />
+                                        </a>
+                                        <span class="c-unit-03-B" style="display:none;">
+                                            KOPYALANDI
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-item-02">
+                            <span class="c-unit-01">
+                                Kurum Adı:
+                            </span>
+                            <span class="c-unit-02">
+                                DENİZ FENERİ YARDIMLAŞMA VE DAYANIŞMA DERNEĞİ
+                            </span>
+                        </div>
+                        <img src="Content/Visuals/Dikdörtgen 709.png" alt="Alternate Text" class="c-item-03">
+                    </div>
+
+                </section>
+
+            </main>
+
+            <div class="pre-footer">
+                <img class="pre-footer-img" src="Content/Visuals/iyilik-hareketi.png" alt="Alternate Text" />
+                <div class="newsletter">
+                    <h4 class="c-item-01">
+                        Projelerle ilgili haftalık güncellemelerimizi kaçırmayın.
+                    </h4>
+                    <form class="c-item-02" id="newsletter">
+                        <div class="form-group">
+                            <input id="newsletter-email" placeholder="E-posta adresinizi giriniz..." type="text" name="newsletter-email" data-rule-required="true" data-rule-email="true" maxlength="50" autocomplete="new-password"
+                                   class="tb-01 c-item-02-A" onkeyup="this.setAttribute('value', this.value);">
+                        </div>
+                        <div class="g-recaptcha" id="newsletterRecaptcha"></div>
+
+                        <a href="javascript:void(0)" class="c-item-02-B" onclick="Feux.Form.UX.checkValidationAndSubmitForm({ ev: event, sender: this });">
+                            ABONE OL
+                        </a>
+                    </form>
+                </div>
+            </div>
+            <footer class="comp-footer-01">
+                <div class="c-wrapper">
+
+                    <div class="c-container-01">
+                        <img class="logo-fix-01" src="Content/Visuals/Logos/footer-logo.png" alt="Alternate Text" />
+                        <div class="social-medias">
+                            <a href="#" class="social-item">
+                                <img src="Content/Visuals/Logos/facebook.png" />
+                            </a>
+                            <a href="#" class="social-item">
+                                <img src="Content/Visuals/Logos/instagram.png" />
+                            </a>
+                            <a href="#" class="social-item">
+                                <img src="Content/Visuals/Logos/twitter.png" />
+                            </a>
+                            <a href="#" class="social-item">
+                                <img src="Content/Visuals/Logos/youtube.png" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="c-container-02">
+                        <nav>
+                            <ul>
+                                <li class="c-item-01">
+                                    <h4 class="c-item-01-A">Kurumsal</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Kurumsal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Kurumsal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Kurumsal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Kurumsal</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="c-item-01">
+                                    <h4 class="c-item-01-A">Bağış Yap</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Bağış Yap</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bağış Yap</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bağış Yap</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bağış Yap</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="c-item-01">
+                                    <h4 class="c-item-01-A">Kategori</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Kategori</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Kategori</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Kategori</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Kategori</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="c-container-03">
+                        <h4 class="c-item-01">İletişim</h4>
+                        <div class="c-item-02">
+                            <p>
+                                Kazlıçeşme Mah.
+                                10. Yıl Caddesi
+                                Zeytinburnu, İSTANBUL
+                            </p>
+                            <p>
+                                <a href="tel:905365126216">
+                                    +90 212 414 60 60
+                                </a>
+                                <a href="tel:905365126216">
+                                    +90 212 414 60 60
+                                </a>
+                            </p>
+                            <p>
+                                <a href="mailto:fener@denizfeneri.org.tr">
+                                    fener@denizfeneri.org.tr
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="c-container-04">
+                        <a href="#" class="c-item-01">
+                            <h2 class="c-unit-01"> Designed By </h2>
+                            <img class="c-unit-02" src="Content/Visuals/tridea.png" alt="tridea" />
+                        </a>
+
+                        <div class="c-item-02">
+                            2022 ® Tüm hakları saklıdır. İzin alınmaksızın hiçbir içerik ve görsel kullanılamaz.
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+
+            <div id="search-result-template" style="display:none;">
+                <div class="c-unit-01">
+                    <img src="Content/Visuals/01.png" class="c-unit-01-B">
+                    <a href="javascript:void(0);" class="c-unit-01-A">
+                        r<strong>es</strong>ult 01
+                    </a>
+                </div>
+                <div class="c-unit-01">
+                    <img src="Content/Visuals/01.png" class="c-unit-01-B">
+                    <a href="javascript:void(0);" class="c-unit-01-A">r<strong>es</strong>ult 02</a>
+                </div>
+            </div>
+            <div id="search-result-not-found-template" style="display:none;">
+                <div class="c-unit-02">
+                    Sonuç Bulunamadı
+                </div>
+
+            </div>
+        </div>
+
+        <section id="modal-wrapper">
+            <div id="modal-content" data-submit-button="modalFormSubmitBtn">
+                <div id="modal-header"></div>
+                <div id="modal-body"></div>
+                <div id="modal-footer"></div>
+                <a id="modal-close" href="javascript:void(0);" onclick="Feux.Modal.Actions.closeClick({ ev: event, sender: this });"></a>
+            </div>
+        </section>
+
+        <div id="overlay-wrapper" onclick="Feux.Base.overlayClick({ sender: this });"></div>
+    </div>
+
+    <div id="mq-values">
+        <div id="mq-xs1"></div>
+        <div id="mq-xs2"></div>
+        <div id="mq-sm1"></div>
+        <div id="mq-sm2"></div>
+        <div id="mq-md"></div>
+        <div id="mq-lg"></div>
+        <div id="mq-xl"></div>
+    </div>
+
+    <!-- Begin:PluginScripts-->
+    <script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>
+    <script src="Content/Plugins/Jquery.Library/jquery-3.6.0.min.js"></script>
+    <script src="Content/Plugins/Jquery.Validation/jquery.validate.js"></script>
+    <script src="Content/Plugins/Jquery.Mask/jquery.mask.js"></script>
+    <script src="Content/Plugins/select2-4.1.0-rc.0/js/select2.min.js"></script>
+    <script src="Content/Plugins/OwlCarousel/owl.carousel.min.js"></script>
+    <script src="Content/Plugins/Dropzone/dropzone.min.js"></script>
+    <!-- End -->
+
+    <script src="Content/Scripts/Base/Feux.Common.Global.js"></script>
+    <script src="Content/Scripts/Base/Feux.Common.Helper.js"></script>
+    <script src="Content/Scripts/Base/Feux.Common.Base.js"></script>
+    <script src="Content/Scripts/Base/Feux.Common.UX.js"></script>
+    <script src="Content/Scripts/Base/Feux.Common.jQuery.js"></script>
+    <script src="Content/Scripts/Base/Feux.Modal.Base.js"></script>
+    <script src="Content/Scripts/Base/Feux.Menu.Primary.js"></script>
+    <script src="Content/Scripts/Feux/Layout.js"></script>
+    <script src="Content/Scripts/Feux/Feux.Sliders.js"></script>
+    <script src="Content/Scripts/Form/Feux.Form.Base.js"></script>
+    <script src="Content/Scripts/Form/Feux.Form.Validation.js"></script>
+    <script src="Content/Scripts/Form/Feux.Form.Plugin.js"></script>
+    <script src="Content/Scripts/Base/Feux.Search.Base.js"></script>
+
+</body>
+</html>

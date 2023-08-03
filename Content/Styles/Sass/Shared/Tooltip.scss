@@ -1,0 +1,185 @@
+@import "../Base/Colour.scss";
+@import "../Base/Global.scss";
+
+.f-tooltip-A {
+    z-index: 3;
+
+    .tt-icon {
+        display: flex;
+        width: 28px;
+        height: 28px;
+        margin: 0 0 0 8px;
+        align-items: center;
+        justify-content: center;
+        background-image: url("../../../Content/Visuals/tooltip-icon.png");
+        background-repeat: no-repeat;
+    }
+
+    .tt-content {
+        position: absolute;
+        left: -8px;
+        bottom: 28px;
+        visibility: hidden;
+        width: 280px;
+        padding: 12px 16px;
+        background-color: #fff;
+        background: #FFFFFF;
+        border-radius: 6px;
+        box-shadow: 0 3px 15px 0 rgba(0,0,0,0.2);
+        opacity: 0;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 14px;
+        color: #1c1c4d;
+        transition: (opacity 0.35s 0.2s, visibility 0s 0.55s);
+
+        &::before {
+            display: inline-block;
+            content: '';
+            position: absolute;
+            z-index: 5;
+            bottom: -4px;
+            left: 11px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #fff;
+        }
+
+        &:after {
+            display: inline-block;
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 10px;
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 6px solid #fff;
+        }
+    }
+
+    &:not(.disabled):hover {
+        cursor: help;
+
+        .tt-content {
+            opacity: 1;
+            visibility: visible;
+            transition: (opacity 0.35s 0.2s, visibility 0s 0.2s);
+        }
+    }
+}
+
+
+@mixin common_xs1_xs2 {
+
+    .f-tooltip-A {
+
+
+        .tt-content {
+        }
+    }
+
+    .f-tooltip-A {
+        z-index: 3;
+
+        .tt-icon {
+            display: flex;
+            width: 28px;
+            height: 28px;
+            margin: 0 0 0 8px;
+            align-items: center;
+            justify-content: center;
+            background-image: url("../../../Content/Visuals/tooltip-icon.png");
+            background-repeat: no-repeat;
+        }
+
+        .tt-content {
+            position: absolute;
+            left: -47px;
+            bottom: 28px;
+            visibility: hidden;
+            width: auto !important;
+            padding: 12px 16px;
+            background-color: #fff;
+            background: #FFFFFF;
+            border-radius: 6px;
+            box-shadow: 0 3px 15px 0 rgba(0,0,0,0.2);
+            opacity: 0;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 14px;
+            color: #1c1c4d;
+            transition: (opacity 0.35s 0.2s, visibility 0s 0.55s);
+
+            &::before {
+                display: inline-block;
+                content: '';
+                position: absolute;
+                z-index: 5;
+                bottom: -4px;
+                left: 11px;
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid #fff;
+            }
+
+            &:after {
+                display: inline-block;
+                content: '';
+                position: absolute;
+                bottom: -6px;
+                left: 10px;
+                width: 0;
+                height: 0;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-top: 6px solid #fff;
+            }
+        }
+
+        &:not(.disabled):hover {
+            cursor: help;
+
+            .tt-content {
+                opacity: 1;
+                visibility: visible;
+                transition: (opacity 0.35s 0.2s, visibility 0s 0.2s);
+            }
+        }
+    }
+}
+
+@media all and (max-width: #{($mq-xs2 - 1) + "px"}) {
+    @include common_xs1_xs2();
+}
+
+@media all and (min-width: #{$mq-xs2 + "px"}) and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    @include common_xs1_xs2();
+}
+
+@mixin common_sm1_sm2 {
+}
+
+@media all and (min-width: #{$mq-sm1 + "px"}) and (max-width: #{($mq-sm2 - 1) + "px"}) {
+    @include common_sm1_sm2();
+}
+
+@media all and (min-width: #{$mq-sm2 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    @include common_sm1_sm2();
+}
+
+@mixin common_md_lg {
+}
+
+@media all and (min-width: #{$mq-md + "px"}) and (max-width: #{($mq-lg - 1) + "px"}) {
+    @include common_md_lg();
+}
+
+@media all and (min-width: #{$mq-lg + "px"}) {
+    @include common_md_lg();
+}

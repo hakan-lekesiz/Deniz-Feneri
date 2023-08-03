@@ -1,0 +1,59 @@
+﻿@import "../../Base/Colour.scss";
+@import "../../Base/Global.scss";
+
+
+ 
+//xs1 and xs2
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    .comp-section-20 {
+
+        .c-wrapper {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .c-item-01 {
+                font-size: 33px;
+                color: #f82e46;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+}
+
+//sm1 and sm2
+@media all and (min-width: #{$mq-sm1 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    .comp-section-20 {
+
+        .c-wrapper {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .c-item-01 {
+                font-size: 33px;
+                color: #f82e46;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+//md+
+@media all and (min-width: #{$mq-md + "px"}) {
+    .comp-section-20 {
+
+         .c-wrapper {
+
+            .c-item-01 {
+                font-size: 68px;
+                color: #f82e46;
+                font-weight: 500;
+                margin-bottom: 35px;
+            }
+        }
+    }
+}

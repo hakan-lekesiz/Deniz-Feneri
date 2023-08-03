@@ -1,0 +1,473 @@
+﻿@import "../../Base/Colour.scss";
+@import "../../Base/Global.scss";
+
+
+
+//xs1 and xs2
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    .comp-section-10 {
+        margin-top: -60px;
+        z-index: 2;
+
+        > .c-wrapper {
+
+            .c-container-01 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 30px;
+
+                .c-item-01 {
+                    margin-bottom: 18px;
+                    border-radius: 0 40px 40px 40px;
+                    overflow: hidden;
+
+                    &:nth-last-child(-n + 3) {
+                        display: none;
+                    }
+
+                    .c-item-01-A {
+                        border-radius: 0 40px 40px 40px;
+                        width: 280px;
+                        height: 280px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .c-item-01-B {
+                        width: 246px;
+                        font-size: 19px;
+                        color: #ffffff;
+                        font-weight: bold;
+                        position: absolute;
+                        bottom: 26px;
+                        left: 20px;
+                        z-index: 2;
+                    }
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        z-index: 1;
+                        background-image: url("../../../Content/Visuals/News/degrade.png");
+                        background-size: cover;
+                    }
+                }
+
+                .slider-container {
+                    width: 100%;
+                    height: 280px;
+                    overflow: hidden;
+                    border-radius: 0 40px 40px 40px;
+                    margin-bottom: 18px;
+
+                    .owl-carousel {
+                        .slide-item {
+                            display: flex;
+                            height: 280px;
+
+                            img {
+                                width: 100%;
+                                height: 280px;
+                                object-fit: cover;
+                                z-index: 1;
+                            }
+
+                            h4 {
+                                position: absolute;
+                                width: calc(100% - 32px);
+                                left: 16px;
+                                bottom: 48px;
+                                text-align: center;
+                                z-index: 3;
+                                font-size: 19px;
+                                color: #ffffff;
+                                font-weight: 700;
+                                -webkit-line-clamp: 2;
+                                line-clamp: 2;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                            }
+
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                right: 0;
+                                left: 0;
+                                z-index: 2;
+                                background-image: url("../../../Content/Visuals/News/degrade.png");
+                            }
+                        }
+
+                        .owl-nav {
+                            .owl-prev {
+                                position: absolute;
+                                top: -160px;
+                                left: 12px;
+                            }
+
+                            .owl-next {
+                                position: absolute;
+                                top: -160px;
+                                right: 12px;
+                            }
+                        }
+
+                        .owl-dots {
+                            display: flex;
+                            justify-content: center;
+                            position: absolute;
+                            width: 100%;
+                            left: 0;
+                            bottom: 8px;
+
+                            .owl-dot {
+
+
+                                button {
+                                    background: transparent;
+                                    font-size: 14px;
+                                    color: #ffffff;
+                                    font-weight: 500;
+                                    width: 32px;
+                                    height: 32px;
+                                    border-radius: 50%;
+                                    border: 1px solid #ffffff;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    cursor: pointer;
+                                    transition: background-color 0.25s;
+                                }
+
+                                &:hover, &.active {
+                                    button {
+                                        background-color: #00a0fc;
+                                    }
+                                }
+
+                                &:not(:last-child) {
+                                    margin-right: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//sm1 and sm2
+@media all and (min-width: #{$mq-sm1 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    .comp-section-10 {
+
+        > .c-wrapper {
+
+            .c-container-01 {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: -56px;
+                z-index: 2;
+                justify-content: space-around;
+
+                .c-item-01 {
+                    margin-bottom: 16px;
+                    border-radius: 0 50px 50px 50px;
+                    overflow: hidden;
+
+                    &:nth-last-child(-n + 3) {
+                        display: none;
+                    }
+
+                    .c-item-01-A {
+                        width: 310px;
+                        height: 310px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .c-item-01-B {
+                        width: 280px;
+                        font-size: 20px;
+                        color: #ffffff;
+                        font-weight: bold;
+                        position: absolute;
+                        bottom: 21px;
+                        left: 22px;
+                        z-index: 2;
+                    }
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        z-index: 1;
+                        background-image: url("../../../Content/Visuals/News/degrade.png");
+                        background-size: cover;
+                    }
+                }
+
+                .slider-container {
+                    width: 662px;
+                    height: 350px;
+                    overflow: hidden;
+                    border-radius: 0 50px 50px 50px;
+                    margin-bottom: 16px;
+
+                    .owl-carousel {
+                        .slide-item {
+                            display: flex;
+                            height: 350px;
+
+                            img {
+                                width: 662px;
+                                height: 350px;
+                                object-fit: cover;
+                                z-index: 1;
+                            }
+
+                            h4 {
+                                position: absolute;
+                                width: 386px;
+                                left: 79px;
+                                bottom: 59px;
+                                z-index: 3;
+                                font-size: 31px;
+                                color: #ffffff;
+                                font-weight: 700;
+                                -webkit-line-clamp: 2;
+                                line-clamp: 2;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                            }
+
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                right: 0;
+                                left: 0;
+                                z-index: 2;
+                                background-image: url("../../../Content/Visuals/News/degrade.png");
+                            }
+                        }
+
+                        .owl-nav {
+                            .owl-prev {
+                                position: absolute;
+                                top: -194px;
+                                left: 24px;
+                            }
+
+                            .owl-next {
+                                position: absolute;
+                                top: -194px;
+                                right: 24px;
+                            }
+                        }
+
+                        .owl-dots {
+                            display: flex;
+                            position: absolute;
+                            left: 79px;
+                            bottom: 14px;
+
+                            .owl-dot {
+
+
+                                button {
+                                    background: transparent;
+                                    font-size: 14px;
+                                    color: #ffffff;
+                                    font-weight: 500;
+                                    width: 32px;
+                                    height: 32px;
+                                    border-radius: 50%;
+                                    border: 1px solid #ffffff;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-right: 8px;
+                                    cursor: pointer;
+                                    transition: background-color 0.25s;
+                                }
+
+                                &:hover, &.active {
+                                    button {
+                                        background-color: #00a0fc;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//md+
+@media all and (min-width: #{$mq-md + "px"}) {
+    .comp-section-10 {
+
+        > .c-wrapper {
+            width: 1130px;
+
+            .c-container-01 {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: -56px;
+                z-index: 2;
+                justify-content: space-between;
+
+                .c-item-01 {
+                    margin-bottom: 37px;
+                    overflow: hidden;
+                    border-radius: 0 50px 50px 50px;
+
+                    .c-item-01-A {
+                        width: 350px;
+                        height: 350px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .c-item-01-B {
+                        width: 310px;
+                        font-size: 25px;
+                        color: #ffffff;
+                        font-weight: bold;
+                        position: absolute;
+                        bottom: 30px;
+                        left: 20px;
+                        z-index: 2;
+                    }
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        z-index: 1;
+                        background-image: url("../../../Content/Visuals/News/degrade.png");
+                        background-size: cover;
+                    }
+                }
+
+                .slider-container {
+                    width: 740px;
+                    height: 350px;
+                    overflow: hidden;
+                    border-radius: 0 50px 50px 50px;
+
+                    .owl-carousel {
+                        .slide-item {
+                            display: flex;
+                            height: 350px;
+
+                            img {
+                                width: 740px;
+                                height: 350px;
+                                object-fit: cover;
+                                z-index: 1;
+                            }
+
+                            h4 {
+                                position: absolute;
+                                width: 386px;
+                                left: 79px;
+                                bottom: 59px;
+                                z-index: 3;
+                                font-size: 31px;
+                                color: #ffffff;
+                                font-weight: 700;
+                                -webkit-line-clamp: 2;
+                                line-clamp: 2;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                            }
+
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                right: 0;
+                                left: 0;
+                                z-index: 2;
+                                background-image: url("../../../Content/Visuals/News/degrade.png");
+                            }
+                        }
+
+                        .owl-nav {
+                            .owl-prev {
+                                position: absolute;
+                                top: -194px;
+                                left: 24px;
+                            }
+
+                            .owl-next {
+                                position: absolute;
+                                top: -194px;
+                                right: 24px;
+                            }
+                        }
+
+                        .owl-dots {
+                            display: flex;
+                            position: absolute;
+                            left: 79px;
+                            bottom: 14px;
+
+                            .owl-dot {
+
+
+                                button {
+                                    background: transparent;
+                                    font-size: 14px;
+                                    color: #ffffff;
+                                    font-weight: 500;
+                                    width: 32px;
+                                    height: 32px;
+                                    border-radius: 50%;
+                                    border: 1px solid #ffffff;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-right: 8px;
+                                    cursor: pointer;
+                                    transition: background-color 0.25s;
+                                }
+
+                                &:hover, &.active {
+                                    button {
+                                        background-color: #00a0fc;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+﻿@import "../../Base/Colour.scss";
+@import "../../Base/Global.scss";
+
+
+ 
+//xs1 and xs2
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+}
+
+//sm1 and sm2
+@media all and (min-width: #{$mq-sm1 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+}
+
+//md+
+@media all and (min-width: #{$mq-md + "px"}) {
+    .comp-section-24 {
+        
+        > .c-wrapper {
+           
+        }
+    }
+}

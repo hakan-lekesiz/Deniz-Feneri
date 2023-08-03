@@ -1,0 +1,149 @@
+﻿@import "../../Base/Colour.scss";
+@import "../../Base/Global.scss";
+
+
+ 
+//xs1 and xs2
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    .comp-section-11 {
+        padding: 12px 0 80px 0;
+
+
+        > .c-wrapper {
+            border-radius: 0 45px 45px 45px;
+            overflow: hidden;
+            width: 280px;
+
+            &:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background: linear-gradient(0deg, rgba(12,0,97,1) 0%, rgba(12,0,97,0.8) 50%, rgba(255,255,255,0.8) 100%);
+                z-index: 1;
+            }
+
+            .c-item-01 {
+                display: block;
+
+                .c-item-01-A {
+                    width: 280px;
+                    height: 280px;
+                    object-fit: cover;
+                    object-position: center;
+                    margin-left: auto;
+                }
+
+                .c-item-01-B {
+                    text-align: center;
+                    width: 170px;
+                    font-size: 19px;
+                    font-weight: bold;
+                    color: #FFFFFF;
+                    position: absolute;
+                    left: 55px;
+                    bottom: 24px;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+}
+
+//sm1 and sm2
+@media all and (min-width: #{$mq-sm1 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    .comp-section-11 {
+        padding: 12px 0 80px 0;
+
+
+        > .c-wrapper {
+            border-radius: 0 45px 45px 45px;
+            overflow: hidden;
+            width: 658px;
+
+            &:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background: linear-gradient(0deg, rgba(12,0,97,1) 0%, rgba(12,0,97,0.8) 50%, rgba(255,255,255,0.8) 100%);
+                z-index: 1;
+            }
+
+            .c-item-01 {
+                display:block;
+                .c-item-01-A {
+                    width: 100%;
+                    height: 350px;
+                    object-fit: cover;
+                    object-position: center;
+                    margin-left: auto;
+                }
+
+                .c-item-01-B {
+                    text-align: center;
+                    width: 170px;
+                    font-size: 23px;
+                    font-weight: bold;
+                    color: #FFFFFF;
+                    position: absolute;
+                    left: 244px;
+                    bottom: 24px;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+}
+
+//md+
+@media all and (min-width: #{$mq-md + "px"}) {
+    .comp-section-11 {
+        padding-top: 12px;
+        margin-bottom: 120px;
+
+        > .c-wrapper {
+            border-radius: 0 45px 45px 45px;
+            overflow: hidden;
+            width: 1130px;
+
+            &:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background: linear-gradient(90deg, rgba(12,0,97,1) 0%, rgba(12,0,97,0.8) 50%, rgba(255,255,255,0.8) 100%);
+                z-index: 1;
+            }
+
+            .c-item-01 {
+                display: flex;
+
+                .c-item-01-A {
+                    width: 60%;
+                    height: 230px;
+                    object-fit: cover;
+                    object-position: center;
+                    margin-left: auto;
+                }
+
+                .c-item-01-B {
+                    width: 170px;
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: #FFFFFF;
+                    position: absolute;
+                    left: 75px;
+                    top: 70px;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+}

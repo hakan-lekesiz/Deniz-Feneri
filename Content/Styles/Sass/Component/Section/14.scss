@@ -1,0 +1,54 @@
+﻿@import "../../Base/Colour.scss";
+@import "../../Base/Global.scss";
+
+
+ 
+//xs1 and xs2
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    .comp-section-14 {
+
+        > .c-wrapper {
+            > video {
+                width: 100%;
+                height: 330px;
+                object-fit: cover;
+                object-position: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+//sm1 and sm2
+@media all and (min-width: #{$mq-sm1 + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    .comp-section-14 {
+
+        > .c-wrapper {
+            > video {
+                width: 100%;
+                height: 530px;
+                object-fit: cover;
+                object-position: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+//md+
+@media all and (min-width: #{$mq-md + "px"}) {
+    .comp-section-14 {
+        margin-bottom:60px;
+        > .c-wrapper {
+            > video {
+                width: 1000px;
+                height: 536px;
+                object-fit: cover;
+                object-position: center;
+                margin: 0 auto;
+                display: block;
+                cursor:pointer;
+            }
+        }
+    }
+}

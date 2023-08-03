@@ -1,0 +1,50 @@
+﻿@import "../Base/Global.scss";
+@import "../Base/Colour.scss";
+
+
+/* Primary font-face */
+
+@font-face {
+    @include prm-font-face-mixin-1;
+    src: url('../../../Content/Files/Fonts/Gotham/GothamRnd-Bold.otf');
+    font-weight: 700;
+}
+
+@font-face {
+    @include prm-font-face-mixin-1;
+    src: url('../../../Content/Files/Fonts/Gotham/GothamRnd-Medium.otf');
+    font-weight: 500;
+}
+@font-face {
+    @include prm-font-face-mixin-1;
+    src: url('../../../Content/Files/Fonts/Gotham/GothamRnd-Book.otf');
+    font-weight: 400;
+}
+@font-face {
+    @include prm-font-face-mixin-1;
+    src: url('../../../Content/Files/Fonts/Gotham/GothamRnd-Light.otf');
+    font-weight: 300;
+}
+
+@font-face {
+    @include prm-font-face-mixin-2;
+    src: url('../../../Content/Files/Fonts/GreatVibes/GreatVibes-Regular.ttf');
+    font-weight: 400;
+}
+
+/* Base font syles */
+
+body {
+    @include prm-font-face-mixin-1;
+    * {
+    font-family: "Gotham Rnd" !important ; 
+    }
+}
+ 
+a {
+    text-decoration: none;
+}
+
+.ff-default {
+    font-family: Sans-serif !important;
+}
